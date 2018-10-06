@@ -3,6 +3,7 @@
 }
 
 .form__labelName {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -20,6 +21,15 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+  color: $dgrey;
+}
+
+.form__textarea::placeholder,
+.form__input::placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   color: $dgrey;
 }

@@ -12,4 +12,8 @@
   line-height: 16px;
   font-weight: 400;
   color: $dgrey;
+
+  & td:last-child {
+    text-align: right;
+  }
 }
