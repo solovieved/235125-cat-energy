@@ -1,0 +1,29 @@
+.example {
+  background-color: $grey;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $black;
+}
+
+.example__text {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $dgrey;
+}
+
+.example__list {
+  list-style: none;
+}
+
+.example__costs {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: $black;
+}

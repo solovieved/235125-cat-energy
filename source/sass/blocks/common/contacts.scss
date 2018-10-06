@@ -1,0 +1,25 @@
+.contacts {
+  background-color: $white;
+}
+
+.contacts__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 20px;
+  color: $black;
+}
+
+.contacts__text {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $dgrey;
+}
+
+.contacts__map {
+  background-image: url(../img/bg-map-mobile@1x.png);
+  width: 320px;
+  height: 400px;
+}

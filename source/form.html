@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="pageHeader">
       <a href="#" class="pageHeader__logo">
-        <img src="img/logo.svg" alt="Кэт энерджи" class="pageHeader__logoImage">
+        <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
       </a>
       <nav class="mainNav">
         <button class="mainNav__toggle" type="button">Открыть меню</button>
@@ -128,7 +129,7 @@
             </li>
           </ul>
         </section>
-        <button class="form__button" type="button">Отправить заявку</button>
+        <button class="pageMain__button" type="button">Отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
       </form>
     </main>
@@ -140,10 +141,10 @@
         </div>
         <div class="contacts__map"></div>
       </section>
-      <div class="pageFooter__logo">
-        <img src="" alt="Cat Energy" class="pageFooter__logoImage">
-      </div>
       <section class="pageFooter__social social">
+        <div class="pageFooter__logo">
+          <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
+        </div>
         <ul class="social__list">
           <li class="social__item">
             <a href="" class="social__link">Вконтакте</a>
@@ -155,10 +156,10 @@
             <a href="" class="social__link">Facebook</a>
           </li>
         </ul>
+        <div class="pageFooter__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__copyrightLink">HTML Academy</a>
+        </div>
       </section>
-      <div class="pageFooter__copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__copyrightLink">HTML Academy</a>
-      </div>
     </footer>
   </body>
 </html>
