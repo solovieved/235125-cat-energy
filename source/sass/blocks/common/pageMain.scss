@@ -1,3 +1,10 @@
+.pageMain {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .pageMain__title {
   font-size: 36px;
   line-height: 60px;
@@ -28,4 +35,18 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+
+@media (min-width: 990px) {
+  .pageMain {
+    width: 768px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .pageMain {
+    width: 1300px;
+  }
 }

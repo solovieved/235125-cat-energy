@@ -1,3 +1,10 @@
 .products__list {
   list-style: none;
 }
+
+@media (min-width: 990px) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

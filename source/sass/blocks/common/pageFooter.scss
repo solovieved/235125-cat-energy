@@ -1,3 +1,8 @@
+.pageFooter {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .pageFooter__social {
   background-color: $grey;
 }
@@ -9,4 +14,30 @@
   font-weight: 400;
   color: $dgrey;
   text-decoration: none;
+}
+
+@media (min-width: 990px) {
+  .pageFooter {
+    width: 768px;
+  }
+
+  .contacts__textBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pageFooter__social {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pageFooter {
+    width: 1300px;
+  }
+
+  .contacts__textBox {
+    position: absolute;
+  }
 }

@@ -19,6 +19,7 @@
 
 .example__list {
   list-style: none;
+  display: flex;
 }
 
 .example__costs {
@@ -27,4 +28,20 @@
   line-height: 20px;
   font-weight: 400px;
   color: $black;
+}
+
+@media (min-width: 990px) {
+  .example__wrapperCosts {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapperCosts {
+    display: block;
+  }
+
+  .example__wrapper {
+    display: flex;
+  }
 }

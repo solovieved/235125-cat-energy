@@ -8,3 +8,15 @@
 .additional__list {
   list-style: none;
 }
+
+@media (min-width: $desktop-width) {
+  .additional__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

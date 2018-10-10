@@ -7,21 +7,21 @@
   </head>
   <body>
     <header class="pageHeader">
-      <a href="#" class="pageHeader__logo">
-        <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
-      </a>
-      <nav class="mainNav">
-        <button class="mainNav__toggle" type="button">Открыть меню</button>
-        <div class="mainNav__wrapper">
-          <ul class="mainNav__list siteList">
-            <li class="siteList__item">
-              <a class="siteList__link" href="index.html">Главная</a>
+      <div class="pageHeader__wrapper">
+        <a href="#" class="pageHeader__logo">
+          <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
+        </a>
+        <nav class="mainNav">
+          <button class="mainNav__toggle" type="button">Открыть меню</button>
+          <ul class="mainNav__list">
+            <li class="mainNav__item ">
+              <a class="mainNav__link" href="index.html">Главная</a>
             </li>
-            <li class="siteList__item">
-              <a class="siteList__link siteList__item--active">Каталог продукции</a>
+            <li class="mainNav__item">
+              <a class="mainNav__link mainNav__item--active">Каталог продукции</a>
             </li>
-            <li class="siteList__item">
-              <a class="siteList__link" href="form.html">Подбор программы</a>
+            <li class="mainNav__item">
+              <a class="mainNav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -203,44 +203,46 @@
       </section>
       <section class="additional">
         <h2 class="additional__title">Дополнительные товары</h2>
-        <ul class="additional__list">
-          <li class="additional__item cardAddit">
-            <h3 class="cardAddit__title">Сахарозаменитель</h3>
-            <p class="cardAddit__text">
-              <span class="cardAddit__textQuantity">1 Упаковка (100 г)</span>
-              <span class="cardAddit__textPrice">100 Р.</span>
-            </p>
-            <a href="#" class="pageMain__button">Заказать</a>
-          </li>
-          <li class="additional__item cardAddit">
-            <h3 class="cardAddit__title">Питьевая вода</h3>
-            <p class="cardAddit__text">
-              <span class="cardAddit__textQuantity">5 литров</span>
-              <span class="cardAddit__textPrice">50 Р.</span>
-            </p>
-            <a href="#" class="pageMain__button">Заказать</a>
-          </li>
-          <li class="additional__item cardAddit">
-            <h3 class="cardAddit__title">Молоко</h3>
-            <p class="cardAddit__text">
-              <span class="cardAddit__textQuantity">1 литр</span>
-              <span class="cardAddit__textPrice">100 Р.</span>
-            </p>
-            <a href="#" class="pageMain__button">Заказать</a>
-          </li>
-          <li class="additional__item cardAddit">
-            <h3 class="cardAddit__title">Витамины</h3>
-            <p class="cardAddit__text">
-              <span class="cardAddit__textQuantity">1 упаковка (30 г)</span>
-              <span class="cardAddit__textPrice">300 Р.</span>
-            </p>
-            <a href="#" class="pageMain__button">Заказать</a>
-          </li>
-        </ul>
+        <div class="additional__wrapper">
+          <ul class="additional__list">
+            <li class="additional__item cardAddit">
+              <h3 class="cardAddit__title">Сахарозаменитель</h3>
+              <p class="cardAddit__text">
+                <span class="cardAddit__textQuantity">1 Упаковка (100 г)</span>
+                <span class="cardAddit__textPrice">100 Р.</span>
+              </p>
+              <a href="#" class="pageMain__button">Заказать</a>
+            </li>
+            <li class="additional__item cardAddit">
+              <h3 class="cardAddit__title">Питьевая вода</h3>
+              <p class="cardAddit__text">
+                <span class="cardAddit__textQuantity">5 литров</span>
+                <span class="cardAddit__textPrice">50 Р.</span>
+              </p>
+              <a href="#" class="pageMain__button">Заказать</a>
+            </li>
+            <li class="additional__item cardAddit">
+              <h3 class="cardAddit__title">Молоко</h3>
+              <p class="cardAddit__text">
+                <span class="cardAddit__textQuantity">1 литр</span>
+                <span class="cardAddit__textPrice">100 Р.</span>
+              </p>
+              <a href="#" class="pageMain__button">Заказать</a>
+            </li>
+            <li class="additional__item cardAddit">
+              <h3 class="cardAddit__title">Витамины</h3>
+              <p class="cardAddit__text">
+                <span class="cardAddit__textQuantity">1 упаковка (30 г)</span>
+                <span class="cardAddit__textPrice">300 Р.</span>
+              </p>
+              <a href="#" class="pageMain__button">Заказать</a>
+            </li>
+          </ul>
+          <div class="present">
+            <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
       </section>
-      <div class="present">
-        <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
     </main>
     <footer class="pageFooter">
       <section class="contacts">

@@ -1,0 +1,28 @@
+.mainNav__list {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.mainNav__link {
+  text-decoration: none;
+  color: $black;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 990px) {
+  .mainNav__toggle {
+    display: none;
+  }
+
+  .mainNav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mainNav__list {
+    display: flex;
+  }
+}
