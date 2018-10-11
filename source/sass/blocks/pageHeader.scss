@@ -1,0 +1,16 @@
+.pageHeader {
+  background-color: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .pageHeader {
+    margin: 0;
+  }
+
+  .pageHeader__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

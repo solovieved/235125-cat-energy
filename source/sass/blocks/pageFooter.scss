@@ -1,0 +1,36 @@
+.pageFooter {
+  background-color: $grey;
+}
+
+.pageFooter__social {
+  background-color: $grey;
+}
+
+.pageFooter__copyrightLink {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $dgrey;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__textBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pageFooter__social {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__textBox {
+    position: absolute;
+  }
+}

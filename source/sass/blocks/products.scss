@@ -1,0 +1,10 @@
+.products__list {
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -20,3 +20,20 @@
   font-weight: 400;
   color: $dgrey;
 }
+
+@media (min-width: $tablet-width) {
+  .work__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work__item {
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work__list {
+    flex-wrap: nowrap;
+  }
+}

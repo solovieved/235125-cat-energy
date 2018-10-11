@@ -33,3 +33,24 @@
   font-weight: 400;
   color: $dgrey;
 }
+
+@media (min-width: $tablet-width) {
+  .form__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form__item {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list--checkbox {
+    flex-wrap: nowrap;
+  }
+
+  .form__wrapper {
+    display: flex;
+  }
+}
