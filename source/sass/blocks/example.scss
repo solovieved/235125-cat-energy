@@ -30,7 +30,7 @@
   color: $black;
 }
 
-@media (min-width: 990px) {
+@media (min-width: $tablet-width) {
   .example__wrapperCosts {
     display: flex;
   }

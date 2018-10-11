@@ -11,7 +11,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 990px) {
+@media (min-width: $tablet-width) {
   .mainNav__toggle {
     display: none;
   }

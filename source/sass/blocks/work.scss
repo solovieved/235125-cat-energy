@@ -21,7 +21,7 @@
   color: $dgrey;
 }
 
-@media (min-width: 990px) {
+@media (min-width: $tablet-width) {
   .work__list {
     display: flex;
     flex-wrap: wrap;

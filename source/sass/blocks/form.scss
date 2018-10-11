@@ -34,13 +34,13 @@
   color: $dgrey;
 }
 
-@media (min-width: 990px) {
+@media (min-width: $tablet-width) {
   .form__list--checkbox {
     display: flex;
     flex-wrap: wrap;
 
     .form__item {
-      width: 354px;
+      width: 300px;
     }
   }
 }
