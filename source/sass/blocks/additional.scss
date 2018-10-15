@@ -3,16 +3,65 @@
   line-height: 24px;
   font-weight: 400;
   color: $black;
+  margin: 0;
+  padding: 30px 0;
 }
 
 .additional__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional__item {
+  border-bottom: 1px solid $borderg;
+  border-right: 1px solid $borderg;
+  min-height: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    padding: 0 38px;
+  }
+
+  .additional__item {
+    margin: 0 -38px;
+
+    .pageMain__button {
+      width: 634px;
+      margin: 0 38px;
+    }
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .additional__list {
+    width: 895px;
+    margin: 0;
+    padding: 0;
+  }
+
   .additional__item {
     display: flex;
     justify-content: space-between;
+    min-height: 72px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    border-right: none;
+    border-top: 1px solid $borderg;
+    margin-top: -1px;
+
+    .pageMain__button {
+      width: 245px;
+      height: 40px;
+      margin: 0;
+    }
   }
 
   .additional__wrapper {

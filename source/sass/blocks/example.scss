@@ -15,11 +15,15 @@
   line-height: 18px;
   font-weight: 400;
   color: $dgrey;
+  padding-right: 10px;
 }
 
 .example__list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .example__costs {
@@ -28,11 +32,36 @@
   line-height: 20px;
   font-weight: 400px;
   color: $black;
+  text-align: center;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-image: linear-gradient(to bottom, $white 400px, transparent 400px);
+  }
+
+  .example__title {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
   .example__wrapperCosts {
     display: flex;
+  }
+
+  .example__costs {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: auto;
+    width: 180px;
+    text-align: right;
   }
 }
 
@@ -43,5 +72,18 @@
 
   .example__wrapper {
     display: flex;
+  }
+
+  .example {
+    background-image: linear-gradient(to bottom, $white 150px, transparent 150px);
+  }
+
+  .example__text {
+    width: 445px;
+  }
+
+  .example__costs {
+    width: auto;
+    text-align: center;
   }
 }

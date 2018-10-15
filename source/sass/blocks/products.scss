@@ -1,10 +1,38 @@
 .products__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__item {
+  min-height: 208px;
+  border-bottom: 1px solid $borderg;
+  margin: 0 -20px;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .products__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .products__item {
+    margin: 0;
+    padding: 0 38px;
+    margin-top: 140px;
+    width: 324px;
+    border: none;
+    min-height: 430px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__item {
+    padding: 0 38px;
+    margin: 0;
+    margin-top: 140px;
+    width: 245px;
   }
 }

@@ -12,4 +12,23 @@
   line-height: 14px;
   font-weight: 400;
   color: $dgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .cardAddit__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cardAddit__wrapper {
+    width: 610px;
+  }
+
+  .cardAddit__text {
+    width: 285px;
+  }
 }

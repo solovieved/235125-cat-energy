@@ -1,7 +1,11 @@
 .intro {
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image:
+    linear-gradient(to top, $white 225px, transparent 225px),
+    url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-color: $olive;
+  padding-top: 40px;
 }
 
 .intro__title {
@@ -9,6 +13,7 @@
   line-height: 36px;
   font-weight: 400;
   color: $white;
+  text-align: center;
 }
 
 .intro__text {
@@ -17,12 +22,17 @@
   line-height: 14px;
   font-weight: 400;
   color: $white;
+  text-align: center;
+}
+
+.intro__image {
+  margin-top: 28px;
 }
 
 .intro__button {
   display: block;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   background-color: $olive;
   font-size: 14px;
   line-height: 18px;
@@ -30,4 +40,45 @@
   text-decoration: none;
   color: $white;
   text-align: center;
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__image {
+    display: none;
+  }
+
+  .intro {
+    padding: 0;
+    min-height: 865px;
+    background: $white;
+  }
+
+  .intro__wrapper {
+    margin-left: 90px;
+    width: 570px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: left;
+  }
+
+  .intro__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+  }
+
+  .intro__button {
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 247px;
+    min-height: 52px;
+    padding-top: 20px;
+  }
 }

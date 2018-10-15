@@ -4,6 +4,7 @@
   line-height: 20px;
   font-weight: 400;
   color: $black;
+  text-align: center;
 }
 
 .all__contentText {
@@ -12,4 +13,12 @@
   line-height: 16px;
   font-weight: 400;
   color: $dgrey;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .all {
+    border-top: 1px solid $borderg;
+    border-right: 1px solid $borderg;
+  }
 }

@@ -2,8 +2,21 @@
   background-color: $grey;
 }
 
+.pageFooter__logo {
+  border-bottom: 1px solid $borderg;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 38px;
+  min-height: 95px;
+}
+
 .pageFooter__social {
   background-color: $grey;
+}
+
+.pageFooter__copyright {
+  min-height: 85px;
+  padding-top: 30px;
 }
 
 .pageFooter__copyrightLink {
@@ -19,6 +32,23 @@
   .contacts__textBox {
     display: flex;
     justify-content: space-between;
+    min-height: 200px;
+    padding-top: 70px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 25px;
+    width: 160px;
+    margin: 0;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    margin: 0;
   }
 
   .pageFooter__social {

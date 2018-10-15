@@ -1,9 +1,21 @@
+.stats {
+  position: relative;
+}
+
 .stats__title {
+  position: absolute;
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: $dgrey;
+  width: 90px;
+  height: 25px;
+  background-color: $grey;
+  top: 42px;
+  left: 15px;
+  padding-right: 5px;
+  text-align: center;
 }
 
 .stats__text {
@@ -12,4 +24,38 @@
   line-height: 24px;
   font-weight: 400;
   color: $black;
+  border: 1px solid $borderg;
+  border-radius: 3px;
+  width: 122px;
+  height: 54px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    margin-right: 42px;
+  }
+
+  .stats__text {
+    width: 160px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__title {
+    font-size: 14px;
+    line-height: 14px;
+    width: 140px;
+    top: 60px;
+    left: 10px;
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__title {
+    background-color: $grey;
+  }
 }

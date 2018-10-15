@@ -3,6 +3,13 @@
   line-height: 60px;
   font-weight: 400;
   color: $black;
+  border-bottom: 1px solid $borderg;
+  margin: 0;
+  padding-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  min-height: 102px;
 }
 
 .pageMain__button {
@@ -16,6 +23,7 @@
   text-decoration: none;
   color: $white;
   text-align: center;
+  padding-top: 10px;
 
   &--grey {
     background-color: $grey;
@@ -31,7 +39,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pageMain__title {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+
   .pageMain__buttonWrapper {
     display: flex;
+  }
+
+  .pageMain__button {
+    width: 248px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pageMain__button {
+    width: 170px;
   }
 }

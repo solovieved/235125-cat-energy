@@ -1,5 +1,13 @@
 .form__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__item--margin {
+  position: relative;
+  margin-top: 28px;
+  margin-left: 40px;
 }
 
 .form__labelName {
@@ -32,6 +40,43 @@
   line-height: 18px;
   font-weight: 400;
   color: $dgrey;
+}
+
+.pageMain__title--noBord {
+  border: none;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__label--radio::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: -40px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $borderg;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form__label--checkbox::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: -40px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $borderg;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {

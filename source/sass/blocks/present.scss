@@ -1,6 +1,9 @@
 .present {
+  position: relative;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  min-height: 288px;
+  padding-top: 185px;
 }
 
 .present__text {
@@ -9,4 +12,19 @@
   line-height: 20px;
   font-weight: 400;
   color: $white;
+  text-align: center;
+  width: 170px;
+  margin: 0;
+  margin-left: 55px;
 }
+
+/*.present__text--gift::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+}*/
