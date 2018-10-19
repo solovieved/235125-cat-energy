@@ -1,6 +1,64 @@
+.mainNav {
+  position: relative;
+}
+
+.mainNav__toggle {
+  position: absolute;
+  top: -65px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.mainNav--closed .mainNav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 26px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 18px;
+}
+
+.mainNav--opened .mainNav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 18px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .mainNav--closed .mainNav__item {
+    display: none;
+  }
+
+  .mainNav--nojs .mainNav__toggle {
+    display: none;
+  }
+}
+
 .mainNav__list {
+  padding: 0;
+  margin: 0 -20px;
   list-style: none;
   text-transform: uppercase;
+}
+
+.mainNav__item {
+  min-height: 65px;
+  border-bottom: 1px solid $borderg;
+  text-align: center;
+  padding-top: 24px;
 }
 
 .mainNav__link {
@@ -12,6 +70,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .mainNav {
+    margin-right: 20px;
+    margin-top: 19px;
+  }
+
   .mainNav__toggle {
     display: none;
   }
@@ -19,10 +82,38 @@
   .mainNav__list {
     display: flex;
   }
+
+  .mainNav__item {
+    margin-left: 36px;
+    border: none;
+  }
+
+  .mainNav__link {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .mainNav {
+    margin: 0;
+    padding: 0;
+  }
+
   .mainNav__list {
     display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .mainNav__item {
+    margin-left: 34px;
+  }
+
+  .mainNav__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }

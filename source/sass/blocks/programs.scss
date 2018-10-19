@@ -1,9 +1,50 @@
 .programs__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  margin-top: -2px;
 }
 
 .programs__item {
+  position: relative;
   background-color: $grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 265px;
+  margin-bottom: -3px;
+}
+
+.programs__item::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: $olive;
+  border-radius: 50%;
+}
+
+.programs__title--slim::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 49px;
+  left: 30px;
+  top: 22px;
+}
+
+.programs__title--pro::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 29px;
+  left: 12px;
+  top: 34px;
 }
 
 .programs__title {
@@ -12,6 +53,9 @@
   line-height: 37px;
   font-weight: 400;
   color: $black;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 71px;
 }
 
 .programs__text {
@@ -20,6 +64,8 @@
   line-height: 18px;
   font-weight: 400;
   color: $dgrey;
+  border-bottom: 1px solid $borderg;
+  padding-bottom: 22px;
 }
 
 .programs__link {
@@ -29,10 +75,184 @@
   line-height: 16px;
   font-weight: 400;
   color: $black;
+  display: block;
+  margin-top: 19px;
+}
+
+.programs__link::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 10px;
+  top: 231px;
+  left: 120px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-top: 2px;
+  }
+
+  .programs__title {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 53px;
+  }
+
+  .programs__text {
+    border: none;
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 53px;
+  }
+
+  .programs__text--pro {
+    width: 340px;
+  }
+
+  .programs__item {
+    min-height: 372px;
+    margin: 0;
+    padding: 0;
+    padding-top: 76px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item::before {
+    content: "";
+    position: absolute;
+    left: 446px;
+    top: 92px;
+    width: 200px;
+    height: 200px;
+    background-color: $olive;
+    border-radius: 50%;
+  }
+
+  .programs__title--slim::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 198px;
+    left: 476px;
+    top: 80px;
+  }
+
+  .programs__title--pro::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 120px;
+    left: 412px;
+    top: 135px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 56px;
+    margin-left: 52px;
+  }
+
+  .programs__link::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    top: 296px;
+    left: 184px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .programs__list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .programs__title {
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 60px;
+  }
+
+  .programs__text {
+    margin: 0;
+    padding: 0;
+    width: 470px;
+    margin-left: 50px;
+    margin-top: 75px;
+  }
+
+  .programs__item::before {
+    content: "";
+    position: absolute;
+    left: 52px;
+    top: 47px;
+    width: 100px;
+    height: 100px;
+    background-color: $olive;
+    border-radius: 50%;
+  }
+
+  .programs__title--slim::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    left: 65px;
+    top: 40px;
+  }
+
+  .programs__title--pro::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 132px;
+    height: 100px;
+    left: 35px;
+    top: 69px;
+  }
+
+  .programs__link {
+    margin-left: 52px;
+    margin-top: 32px;
+  }
+
+  .programs__link::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    top: 290px;
+    left: 180px;
   }
 }

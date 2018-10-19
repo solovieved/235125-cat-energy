@@ -1,9 +1,24 @@
+.stats {
+  position: relative;
+}
+
 .stats__title {
+  position: absolute;
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: $dgrey;
+  width: 90px;
+  height: 25px;
+  background-color: $grey;
+  top: 46px;
+  left: 19px;
+  text-align: center;
+  padding-top: 2px;
+  padding-right: 14px;
+  padding-left: 10px;
+  text-transform: lowercase;
 }
 
 .stats__text {
@@ -12,4 +27,41 @@
   line-height: 24px;
   font-weight: 400;
   color: $black;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    margin-right: 42px;
+  }
+
+  .stats__text {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 13px;
+  }
+
+  .stats__title {
+    font-size: 14px;
+    line-height: 14px;
+    width: 140px;
+    top: 60px;
+    left: 10px;
+    background-color: $white;
+    padding: 0;
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__title {
+    background-color: $grey;
+  }
 }

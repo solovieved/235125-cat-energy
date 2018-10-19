@@ -9,15 +9,14 @@
 </head>
 
 <body>
-  <div class="container">
     <header class="pageHeader">
-      <div class="wrapper">
+      <div class="container wrapper">
         <div class="pageHeader__wrapper">
           <a href="#" class="pageHeader__logo">
             <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
           </a>
-          <nav class="mainNav">
-            <button class="mainNav__toggle" type="button">Открыть меню</button>
+          <nav class="mainNav mainNav mainNav--closed mainNav--nojs">
+            <button class="mainNav__toggle" type="button"><span class="visuallyHidden">Открыть меню</span></button>
             <ul class="mainNav__list">
               <li class="mainNav__item">
                 <a class="mainNav__link" href="index.html">Главная</a>
@@ -34,49 +33,49 @@
       </div>
     </header>
     <main class="pageMain">
-      <div class="wrapper">
-        <h2 class="pageMain__title">Подбор программы</h2>
+      <div class="container wrapper">
+        <h2 class="pageMain__title pageMain__title--noBord">Подбор программы</h2>
         <p class="pageMain__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="http://echo.htmlacademy.ru" class="form" method="post">
           <div class="form__wrapper">
             <section class="form__section">
               <ul class="form__list">
-                <li class="form__item">
+                <li class="form__itemPlace">
                   <label class="form__label">
                     <span class="form__labelName">Имя:*</span>
                     <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__itemPlace">
                   <label class="form__label">
                     <span class="form__labelName">Вес (кг):*</span>
                     <input class="form__input" type="text" name="Weight" placeholder="7" required>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__itemPlace">
                   <label class="form__label">
-                    <span class="form__labelName">Возраст:*</span>
+                    <span class="form__labelName">Возраст (лет):*</span>
                     <input class="form__input" type="text" name="Years" placeholder="7" required>
                   </label>
                 </li>
               </ul>
             </section>
             <section class="form__section">
-              <ul class="form__list">
+              <ul class="form__list form__list--border">
                 <li class="form__item">
-                  <label class="form__label">
+                  <label class="form__label form__label--radio">
                     <input class="form__radio" type="radio" name="Program" value="Похудение" checked>
                     <span class="form__labelName">Похудение</span>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label">
+                  <label class="form__label form__label--radio">
                     <input class="form__radio" type="radio" name="Program" value="Набор массы">
                     <span class="form__labelName">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label">
+                  <label class="form__label form__label--radio">
                     <input class="form__radio" type="radio" name="Program" value="Не знаю">
                     <span class="form__labelName">Не знаю (Нужен ваш совет)</span>
                   </label>
@@ -84,16 +83,16 @@
               </ul>
             </section>
           </div>
-          <section class="form__section">
+          <section class="form__section form__section--noBorder">
             <h3 class="form__title">Контактные данные (владельца кота)</h3>
             <ul class="form__list form__wrapper">
-              <li class="form__item">
+              <li class="form__itemPlace">
                 <label class="form__label">
                   <span class="form__labelName">E-mail:*</span>
                   <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__itemPlace">
                 <label class="form__label">
                   <span class="form__labelName">Телефон:*</span>
                   <input class="form__input" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
@@ -101,8 +100,8 @@
               </li>
             </ul>
           </section>
-          <section class="form__section">
-            <h3 class="form__title">Коментарий</h3>
+          <section class="form__section form__section--noBorder">
+            <h3 class="form__title">Комментарий</h3>
             <div class="form__comment">
               <label class="form__label">
                 <textarea class="form__textarea" name="Comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -110,28 +109,28 @@
             </div>
           </section>
           <section class="form__section">
-            <h3 class="form__title">Дополнительно</h3>
+            <h3 class="form__title form__title--noMargin">Дополнительно</h3>
             <ul class="form__list form__list--checkbox">
-              <li class="form__item">
-                <label class="form__label">
+              <li class="form__item form__item--checkbox">
+                <label class="form__label form__label--checkbox">
                   <input class="form__checkbox" type="checkbox" name="sugar" checked>
                   <span class="form__labelName">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="form__item">
-                <label class="form__label">
+              <li class="form__item form__item--checkbox">
+                <label class="form__label form__label--checkbox">
                   <input class="form__checkbox" type="checkbox" name="aqua">
                   <span class="form__labelName">Питьевая вода</span>
                 </label>
               </li>
-              <li class="form__item">
-                <label class="form__label">
+              <li class="form__item form__item--checkbox">
+                <label class="form__label form__label--checkbox">
                   <input class="form__checkbox" type="checkbox" name="milk">
                   <span class="form__labelName">Молоко</span>
                 </label>
               </li>
-              <li class="form__item">
-                <label class="form__label">
+              <li class="form__item form__item--checkbox">
+                <label class="form__label form__label--checkbox">
                   <input class="form__checkbox" type="checkbox" name="vitamins">
                   <span class="form__labelName">Витамины</span>
                 </label>
@@ -147,7 +146,7 @@
     </main>
     <footer class="pageFooter">
       <section class="contacts">
-        <div class="wrapper">
+        <div class="container wrapper">
           <div class="contacts__textBox">
             <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -156,7 +155,7 @@
         <div class="contacts__map"></div>
       </section>
       <section class="pageFooter__social social">
-        <div class="wrapper">
+        <div class="container wrapper">
           <div class="pageFooter__logo">
             <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
           </div>
@@ -177,7 +176,7 @@
         </div>
       </section>
     </footer>
-  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

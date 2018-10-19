@@ -2,8 +2,23 @@
   background-color: $grey;
 }
 
+.pageFooter__logo {
+  border-bottom: 1px solid $borderg;
+  margin: 0;
+  padding: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin-top: 38px;
+  min-height: 56px;
+}
+
 .pageFooter__social {
   background-color: $grey;
+}
+
+.pageFooter__copyright {
+  min-height: 85px;
+  padding-top: 30px;
 }
 
 .pageFooter__copyrightLink {
@@ -16,16 +31,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__textBox {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .pageFooter__social {
+    min-height: 150px;
     .wrapper {
       display: flex;
       justify-content: space-between;
     }
+  }
+
+  .pageFooter__logo {
+    padding: 0;
+    margin: 0;
+    margin-top: 64px;
+    border: none;
+  }
+
+  .pageFooter__copyright {
+    margin-top: 35px;
   }
 }
 

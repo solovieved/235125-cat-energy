@@ -1,8 +1,26 @@
+.pageMain {
+  margin: 0;
+}
+
 .pageMain__title {
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: $black;
+  border-bottom: 1px solid $borderg;
+  margin: 0;
+  padding-top: 16px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  min-height: 105px;
+}
+
+.pageMain__text {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  margin-top: -4px;
 }
 
 .pageMain__button {
@@ -16,10 +34,12 @@
   text-decoration: none;
   color: $white;
   text-align: center;
+  padding-top: 10px;
 
   &--grey {
     background-color: $grey;
     color: $dgrey;
+    margin-top: 21px;
   }
 }
 
@@ -31,7 +51,43 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pageMain__title {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 54px;
+    margin-bottom: 27px;
+  }
+
   .pageMain__buttonWrapper {
     display: flex;
+  }
+
+  .pageMain__button {
+    width: 248px;
+    margin-top: 32px;
+
+    &--grey {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pageMain__title {
+    margin-top: 19px;
+  }
+
+  .pageMain__button {
+    width: 170px;
+    margin: 0;
+    margin-top: 29px;
+
+    &--grey {
+      margin-top: 85px;
+      margin-left: 36px;
+    }
   }
 }
