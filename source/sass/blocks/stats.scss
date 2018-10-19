@@ -12,10 +12,13 @@
   width: 90px;
   height: 25px;
   background-color: $grey;
-  top: 42px;
-  left: 15px;
-  padding-right: 5px;
+  top: 46px;
+  left: 19px;
   text-align: center;
+  padding-top: 2px;
+  padding-right: 14px;
+  padding-left: 10px;
+  text-transform: lowercase;
 }
 
 .stats__text {
@@ -24,12 +27,12 @@
   line-height: 24px;
   font-weight: 400;
   color: $black;
-  border: 1px solid $borderg;
+  border: 1px solid #cfcfcf;
   border-radius: 3px;
-  width: 122px;
-  height: 54px;
+  width: 124px;
+  height: 56px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,10 +41,11 @@
   }
 
   .stats__text {
-    width: 160px;
-    height: 70px;
+    width: 162px;
+    height: 72px;
     font-size: 30px;
     line-height: 37px;
+    padding-top: 13px;
   }
 
   .stats__title {
@@ -51,6 +55,8 @@
     top: 60px;
     left: 10px;
     background-color: $white;
+    padding: 0;
+    padding-top: 4px;
   }
 }
 

@@ -55,14 +55,12 @@ img {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: auto;
+    width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
-    margin: 0;
   }
 
   .wrapper {
-    width: 1300px;
     margin: 0 auto;
   }
 }

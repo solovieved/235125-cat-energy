@@ -1,11 +1,11 @@
 .intro {
   background-image:
-    linear-gradient(to top, $white 225px, transparent 225px),
+    linear-gradient(to top, $white 175px, transparent 175px),
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: top center;
   background-color: $olive;
-  padding-top: 40px;
+  padding-top: 1px;
 }
 
 .intro__title {
@@ -14,6 +14,8 @@
   font-weight: 400;
   color: $white;
   text-align: center;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 .intro__text {
@@ -26,7 +28,7 @@
 }
 
 .intro__image {
-  margin-top: 28px;
+  margin-top: 15px;
 }
 
 .intro__button {
@@ -40,7 +42,7 @@
   text-decoration: none;
   color: $white;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,12 +52,11 @@
 
   .intro {
     padding: 0;
-    min-height: 865px;
+    min-height: 810px;
     background: $white;
   }
 
   .intro__wrapper {
-    margin-left: 90px;
     width: 570px;
   }
 
@@ -64,6 +65,10 @@
     line-height: 60px;
     color: $black;
     text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 55px;
+    margin-left: 88px;
   }
 
   .intro__text {
@@ -71,14 +76,40 @@
     line-height: 20px;
     color: $black;
     text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 42px;
+    margin-left: 88px;
   }
 
   .intro__button {
-    margin-top: 50px;
     font-size: 20px;
     line-height: 20px;
-    width: 247px;
+    width: 245px;
     min-height: 52px;
-    padding-top: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 88px;
+    margin-top: 47px;
+    padding-top: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-height: 661px;
+  }
+
+  .intro__wrapper {
+    margin: 0;
+    padding: 0;
+    margin-left: -8px;
+    padding-top: 52px;
+  }
+
+  .intro__button {
+    margin-top: 52px;
+  }
+}
+
+

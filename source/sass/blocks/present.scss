@@ -2,8 +2,10 @@
   position: relative;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 288px;
+  min-height: 289px;
   padding-top: 185px;
+  margin-top: 39px;
+  margin-bottom: 35px;
 }
 
 .present__text {
@@ -28,3 +30,26 @@
   left: 0;
   top: 0;
 }*/
+
+@media (min-width: $tablet-width) {
+  .present {
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    margin: 0;
+    margin-top: 73px;
+    padding: 0;
+    padding-right: 78px;
+    padding-top: 73px;
+    margin-bottom: -13px;
+  }
+
+  .present__text {
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .present {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    margin: 0;
+    margin-top: 45px;
+  }
+}

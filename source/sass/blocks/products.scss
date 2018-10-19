@@ -9,6 +9,7 @@
   border-bottom: 1px solid $borderg;
   margin: 0 -20px;
   padding: 0 20px;
+  min-height: 209px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +33,7 @@
   .products__item {
     padding: 0 38px;
     margin: 0;
-    margin-top: 140px;
+    margin-top: 142px;
     width: 245px;
   }
 }

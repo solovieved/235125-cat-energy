@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: -2px;
 }
 
 .programs__item {
@@ -10,13 +11,14 @@
   padding-left: 20px;
   padding-right: 20px;
   min-height: 265px;
+  margin-bottom: -3px;
 }
 
 .programs__item::before {
   content: "";
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 22px;
+  top: 24px;
   width: 50px;
   height: 50px;
   background-color: $olive;
@@ -28,10 +30,10 @@
   content: "";
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  width: 50px;
-  height: 47px;
+  width: 52px;
+  height: 49px;
   left: 30px;
-  top: 18px;
+  top: 22px;
 }
 
 .programs__title--pro::before {
@@ -39,10 +41,10 @@
   content: "";
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  width: 65px;
-  height: 50px;
+  width: 69px;
+  height: 29px;
   left: 12px;
-  top: 30px;
+  top: 34px;
 }
 
 .programs__title {
@@ -51,9 +53,9 @@
   line-height: 37px;
   font-weight: 400;
   color: $black;
-  text-align: center;
-  padding-top: 25px;
-  padding-left: 40px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 71px;
 }
 
 .programs__text {
@@ -63,7 +65,7 @@
   font-weight: 400;
   color: $dgrey;
   border-bottom: 1px solid $borderg;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
 
 .programs__link {
@@ -74,7 +76,7 @@
   font-weight: 400;
   color: $black;
   display: block;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 .programs__link::before {
@@ -84,17 +86,22 @@
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
-  top: 225px;
+  top: 231px;
   left: 120px;
 }
 
 @media (min-width: $tablet-width) {
+  .programs {
+    margin-top: 2px;
+  }
+
   .programs__title {
     padding: 0;
     margin: 0;
     text-align: left;
     font-size: 36px;
     line-height: 37px;
+    margin-left: 53px;
   }
 
   .programs__text {
@@ -102,9 +109,10 @@
     width: 380px;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 35px;
-    margin-bottom: 60px;
     padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 53px;
   }
 
   .programs__text--pro {
@@ -113,16 +121,17 @@
 
   .programs__item {
     min-height: 372px;
-    padding-left: 54px;
-    padding-top: 80px;
+    margin: 0;
+    padding: 0;
+    padding-top: 76px;
     margin-bottom: 30px;
   }
 
   .programs__item::before {
     content: "";
     position: absolute;
-    left: 450px;
-    top: 95px;
+    left: 446px;
+    top: 92px;
     width: 200px;
     height: 200px;
     background-color: $olive;
@@ -136,7 +145,7 @@
     background-repeat: no-repeat;
     width: 140px;
     height: 198px;
-    left: 480px;
+    left: 476px;
     top: 80px;
   }
 
@@ -145,15 +154,19 @@
     content: "";
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
-    width: 260px;
-    height: 110px;
-    left: 420px;
-    top: 140px;
+    width: 270px;
+    height: 120px;
+    left: 412px;
+    top: 135px;
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 56px;
+    margin-left: 52px;
   }
 
   .programs__link::before {
@@ -163,8 +176,8 @@
     background-repeat: no-repeat;
     width: 20px;
     height: 10px;
-    top: 315px;
-    left: 180px;
+    top: 296px;
+    left: 184px;
   }
 }
 
@@ -182,7 +195,8 @@
 
   .programs__title {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 75px;
+    margin-left: 60px;
   }
 
   .programs__text {
@@ -190,14 +204,14 @@
     padding: 0;
     width: 470px;
     margin-left: 50px;
-    margin-top: 70px;
+    margin-top: 75px;
   }
 
   .programs__item::before {
     content: "";
     position: absolute;
-    left: 40px;
-    top: 40px;
+    left: 52px;
+    top: 47px;
     width: 100px;
     height: 100px;
     background-color: $olive;
@@ -211,8 +225,8 @@
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
-    left: 50px;
-    top: 30px;
+    left: 65px;
+    top: 40px;
   }
 
   .programs__title--pro::before {
@@ -220,15 +234,15 @@
     content: "";
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
-    width: 130px;
+    width: 132px;
     height: 100px;
-    left: 25px;
-    top: 65px;
+    left: 35px;
+    top: 69px;
   }
 
   .programs__link {
-    margin-left: 50px;
-    margin-top: 35px;
+    margin-left: 52px;
+    margin-top: 32px;
   }
 
   .programs__link::before {

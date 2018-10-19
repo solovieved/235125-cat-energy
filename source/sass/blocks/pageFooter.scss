@@ -4,10 +4,12 @@
 
 .pageFooter__logo {
   border-bottom: 1px solid $borderg;
+  margin: 0;
+  padding: 0;
   padding-left: 75px;
   padding-right: 75px;
-  padding-top: 38px;
-  min-height: 95px;
+  margin-top: 38px;
+  min-height: 56px;
 }
 
 .pageFooter__social {
@@ -29,33 +31,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__textBox {
-    display: flex;
-    justify-content: space-between;
-    min-height: 200px;
-    padding-top: 70px;
-  }
-
-  .contacts__title {
-    font-size: 20px;
-    line-height: 25px;
-    width: 160px;
-    margin: 0;
-  }
-
-  .contacts__text {
-    font-size: 16px;
-    line-height: 20px;
-    width: 160px;
-    text-align: right;
-    margin: 0;
-  }
-
   .pageFooter__social {
+    min-height: 150px;
     .wrapper {
       display: flex;
       justify-content: space-between;
     }
+  }
+
+  .pageFooter__logo {
+    padding: 0;
+    margin: 0;
+    margin-top: 64px;
+    border: none;
+  }
+
+  .pageFooter__copyright {
+    margin-top: 35px;
   }
 }
 

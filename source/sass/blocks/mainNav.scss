@@ -18,8 +18,8 @@
 .mainNav--closed .mainNav__toggle::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 15px;
+  top: 23px;
+  left: 26px;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   width: 25px;
@@ -70,6 +70,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .mainNav {
+    margin-right: 20px;
+    margin-top: 19px;
+  }
+
   .mainNav__toggle {
     display: none;
   }
@@ -79,20 +84,32 @@
   }
 
   .mainNav__item {
-    margin-left: 30px;
+    margin-left: 36px;
     border: none;
   }
 
   .mainNav__link {
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .mainNav {
+    margin: 0;
+    padding: 0;
+  }
+
   .mainNav__list {
     display: flex;
-    padding-top: 60px;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .mainNav__item {
+    margin-left: 34px;
   }
 
   .mainNav__link {
