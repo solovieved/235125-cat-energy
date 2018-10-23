@@ -33,23 +33,47 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
+    width: 633px;
     margin-top: 15px;
     margin-left: 38px;
+    margin-right: 38px;
   }
 
   .cardAddit__text {
-    width: 200px;
+    width: 245px;
     font-size: 16px;
+    margin-top: 18px;
+  }
+
+  .cardAddit__textQuantity {
+    text-align: right;
+    width: 150px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .cardAddit__wrapper {
-    width: 610px;
     margin: 0;
   }
 
   .cardAddit__text {
-    width: 345px;
+    margin: 0;
+    margin-top: 18px;
+    width: 367px;
+  }
+
+  .cardAddit__title {
+    margin-top: 12px;
+    margin-left: 1px;
+  }
+
+  .cardAddit__textQuantity {
+    text-align: left;
+  }
+
+  .cardAddit__textPrice {
+    width: 63px;
+    text-align: left;
   }
 }

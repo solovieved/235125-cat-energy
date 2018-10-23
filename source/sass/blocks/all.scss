@@ -1,3 +1,7 @@
+.all {
+  position: relative;
+}
+
 .all__contentTitle {
   text-transform: uppercase;
   font-size: 16px;
@@ -19,9 +23,31 @@
   margin-top: 7px;
 }
 
+.all::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-plus.svg");
+  width: 30px;
+  height: 30px;
+  left: 144px;
+  top: 27px;
+}
+
 @media (min-width: $tablet-width) {
   .all {
     border: 1px solid $borderg;
+    min-height: 429px;
+  }
+
+  .all::before {
+    width: 60px;
+    height: 60px;
+    left: 132px;
+    top: 55px;
+  }
+
+  .all__content {
+    margin: 0 38px;
   }
 
   .all__contentTitle {
@@ -35,7 +61,7 @@
     font-size: 16px;
     width: 200px;
     line-height: 18px;
-    margin-top: 28px;
+    margin-top: 26px;
     margin-left: 24px;
   }
 }
@@ -45,8 +71,21 @@
     padding: 0;
   }
 
+  .all::before {
+    left: 92px;
+    top: 55px;
+  }
+
+  .all__content {
+    margin: 0;
+  }
+
+  .all__contentTitle {
+    margin-left: 47px;
+  }
+
   .all__contentText {
-    margin-top: 23px;
+    margin-top: 26px;
+    margin-left: 22px;
   }
 }
-

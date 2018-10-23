@@ -182,6 +182,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    margin: 0;
+  }
+
   .programs__list {
     display: flex;
     justify-content: space-between;

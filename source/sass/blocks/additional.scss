@@ -23,21 +23,27 @@
 
 @media (min-width: $tablet-width) {
   .additional {
-    padding: 0 38px;
+    padding: 0;
+    margin-top: 67px;
   }
 
   .additional__title {
-    margin-top: 70px;
     border: none;
+    padding: 0;
+    margin-left: 36px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additional__list {
-    margin-top: 46px;
+    margin-top: 80px;
   }
 
   .additional__item {
     border: 1px solid $borderg;
-    margin: 0 -38px;
+    min-height: 139px;
+    width: 708px;
+    margin-top: -1px;
 
     .pageMain__button {
       width: 634px;
@@ -45,11 +51,6 @@
       margin-top: 10px;
       margin-bottom: 25px;
     }
-  }
-
-  .additional__title {
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
@@ -61,6 +62,7 @@
   }
 
   .additional__title {
+    margin: 0;
     margin-top: 75px;
   }
 
@@ -68,18 +70,21 @@
     width: 895px;
     margin: 0;
     padding: 0;
-    margin-top: 45px;
+    margin-top: 80px;
   }
 
   .additional__item {
     display: flex;
     justify-content: space-between;
-    min-height: 72px;
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    border-right: none;
     border: 1px solid $borderg;
+    width: 895px;
+    min-height: 73px;
+    border-right: none;
+    border-left: none;
+    margin-top: -1px;
 
     .pageMain__button {
       width: 245px;
