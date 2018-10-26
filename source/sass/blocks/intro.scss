@@ -8,6 +8,15 @@
   padding-top: 1px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .intro {
+    background-image:
+      linear-gradient(to top, $white 175px, transparent 175px),
+      url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .intro__title {
   font-size: 36px;
   line-height: 36px;
@@ -55,10 +64,15 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    position: relative;
     padding: 0;
     min-height: 810px;
     background: $white;
+  }
+
+  .intro {
+    .container {
+      position: relative;
+    }
   }
 
   .intro__title {
@@ -94,7 +108,7 @@
   .intro__button {
     position: absolute;
     left: 119px;
-    top: 230px;
+    top: 229px;
     font-size: 20px;
     line-height: 20px;
     width: 245px;
@@ -131,13 +145,13 @@
   .intro__image {
     position: absolute;
     width: 552px;
-    right: 218px;
+    left: 490px;
     top: 5px;
     z-index: 0;
   }
 
   .intro__button {
-    left: 80px;
+    left: 120px;
     top: 339px;
   }
 }

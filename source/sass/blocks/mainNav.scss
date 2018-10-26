@@ -105,15 +105,29 @@
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 43px;
   }
 
   .mainNav__item {
+    padding-top: 30px;
     margin-left: 34px;
   }
 
+  .mainNav__item--active {
+    border-bottom: 2px solid $olive;
+  }
+
+  .mainNav__item--index {
+    border-bottom: 2px solid $white;
+  }
+
   .mainNav__link {
+    display: block;
     font-size: 20px;
     line-height: 24px;
+}
+
+  .mainNav__link--index {
+    color: $white;
   }
 }

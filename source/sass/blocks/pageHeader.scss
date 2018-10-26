@@ -45,18 +45,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .pegeHeader--index {
-    position: relative;
-  }
-
-  .pageHeader--index::before {
-    position: absolute;
-    content: "";
-    width: 720px;
-    height: 695px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+  .pageHeader--index {
+    background-image:
+      linear-gradient(to top, $white 175px, transparent 175px),
+      url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, $white 50%, #63a73a 50%);
     background-repeat: no-repeat;
-    left: 50%;
+    background-position: calc(50% + 359px) 0;
   }
 
   .pageHeader__logo {
@@ -65,5 +60,12 @@
 
   .pageHeader__logo img {
     width: 200px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .pageHeader--index {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
