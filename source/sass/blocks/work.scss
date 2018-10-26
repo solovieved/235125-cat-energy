@@ -115,16 +115,20 @@
     position: relative;
     z-index: 0;
     counter-reset: myCounter;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .work__item--number {
     list-style: none;
   }
 
-  .work__item--number:after {
+  .work__item--number::after {
     position: absolute;
     counter-increment: myCounter;
-    content:counter(myCounter);
+    content: counter(myCounter);
     color: $grey;
     display: inline-block;
     text-align: center;
@@ -153,13 +157,6 @@
     z-index: 0;
   }
 
-  .work__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-  }
-
   .work__item {
     width: 324px;
     margin: 0;
@@ -178,17 +175,17 @@
   }
 
   .work__item--powder::before {
-    left: 0px;
+    left: 0;
     top: 72px;
   }
 
   .work__item--dining::before {
-    left: 0px;
+    left: 0;
     top: 72px;
   }
 
   .work__item--clock::before {
-    left: 0px;
+    left: 0;
     top: 72px;
   }
 }

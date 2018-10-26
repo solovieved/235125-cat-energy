@@ -40,13 +40,13 @@
 }
 
 .pageFooter__copyrightLink {
-    &:hover path {
-      fill: #74bc48;
-    }
+  &:hover path {
+    fill: #74bc48;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

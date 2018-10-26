@@ -57,6 +57,8 @@
 }
 
 .form__itemPlace {
+  position: relative;
+
   .form__labelName {
     margin-right: 10px;
   }
@@ -161,10 +163,6 @@
   margin: 0;
   padding: 0;
   margin-top: 15px;
-}
-
-.form__itemPlace {
-  position: relative;
 }
 
 .form__itemPlace--email::before {
@@ -562,6 +560,8 @@
   }
 
   .form__itemPlace {
+    width: 570px;
+
     .form__labelName {
       margin-right: 15px;
     }
@@ -583,10 +583,6 @@
   .form__listContactData {
     margin: 0;
     margin-top: 30px;
-  }
-
-  .form__itemPlace {
-    width: 570px;
   }
 
   .form__textarea {
