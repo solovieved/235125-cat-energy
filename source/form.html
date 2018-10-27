@@ -9,173 +9,224 @@
 </head>
 
 <body>
-    <header class="pageHeader">
-      <div class="container wrapper">
-        <div class="pageHeader__wrapper">
-          <a href="#" class="pageHeader__logo">
-            <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
+  <header class="pageHeader">
+    <div class="container wrapper">
+      <div class="pageHeader__wrapper">
+        <a href="#" class="pageHeader__logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="pageHeader__logoImage" src="img/logo-mobile.svg" alt="Кэт энерджи" width="192" height="40">
+            </picture>
           </a>
-          <nav class="mainNav mainNav mainNav--closed mainNav--nojs">
-            <button class="mainNav__toggle" type="button"><span class="visuallyHidden">Открыть меню</span></button>
-            <ul class="mainNav__list">
-              <li class="mainNav__item">
-                <a class="mainNav__link" href="index.html">Главная</a>
-              </li>
-              <li class="mainNav__item">
-                <a class="mainNav__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="mainNav__item mainNav__item--active">
-                <a class="mainNav__link">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="mainNav mainNav mainNav--closed mainNav--nojs">
+          <button class="mainNav__toggle" type="button"><span class="visuallyHidden">Открыть меню</span></button>
+          <ul class="mainNav__list">
+            <li class="mainNav__item">
+              <a class="mainNav__link" href="index.html">Главная</a>
+            </li>
+            <li class="mainNav__item">
+              <a class="mainNav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="mainNav__item mainNav__item--active">
+              <a class="mainNav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    <main class="pageMain">
+    </div>
+  </header>
+  <main class="pageMain">
+    <div class="container wrapper">
+      <h2 class="pageMain__title pageMain__title--noBord">Подбор программы</h2>
+      <p class="pageMain__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
+    <form action="http://echo.htmlacademy.ru" class="form" method="post">
       <div class="container wrapper">
-        <h2 class="pageMain__title pageMain__title--noBord">Подбор программы</h2>
-        <p class="pageMain__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form action="http://echo.htmlacademy.ru" class="form" method="post">
-          <div class="form__wrapper">
-            <section class="form__section">
-              <ul class="form__list">
-                <li class="form__itemPlace">
-                  <label class="form__label">
-                    <span class="form__labelName">Имя:*</span>
-                    <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
-                  </label>
-                </li>
-                <li class="form__itemPlace">
-                  <label class="form__label">
-                    <span class="form__labelName">Вес (кг):*</span>
-                    <input class="form__input" type="text" name="Weight" placeholder="7" required>
-                  </label>
-                </li>
-                <li class="form__itemPlace">
-                  <label class="form__label">
-                    <span class="form__labelName">Возраст (лет):*</span>
-                    <input class="form__input" type="text" name="Years" placeholder="7" required>
-                  </label>
-                </li>
-              </ul>
-            </section>
-            <section class="form__section">
-              <ul class="form__list form__list--border">
-                <li class="form__item">
-                  <label class="form__label form__label--radio">
-                    <input class="form__radio" type="radio" name="Program" value="Похудение" checked>
-                    <span class="form__labelName">Похудение</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__label form__label--radio">
-                    <input class="form__radio" type="radio" name="Program" value="Набор массы">
-                    <span class="form__labelName">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label class="form__label form__label--radio">
-                    <input class="form__radio" type="radio" name="Program" value="Не знаю">
-                    <span class="form__labelName">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </section>
-          </div>
-          <section class="form__section form__section--noBorder">
-            <h3 class="form__title">Контактные данные (владельца кота)</h3>
-            <ul class="form__list form__wrapper">
-              <li class="form__itemPlace">
+        <div class="form__wrapper">
+          <section class="form__data">
+            <h2 class="visuallyHidden">Данные кота</h2>
+            <ul class="form__listData">
+              <li class="form__itemData">
                 <label class="form__label">
-                  <span class="form__labelName">E-mail:*</span>
-                  <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <span class="form__labelName">Имя:*</span>
+                  <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
                 </label>
               </li>
-              <li class="form__itemPlace">
+              <li class="form__itemData">
                 <label class="form__label">
-                  <span class="form__labelName">Телефон:*</span>
-                  <input class="form__input" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
+                  <span class="form__labelName">Вес (кг):*</span>
+                  <input class="form__input" type="text" name="Weight" placeholder="7" required>
+                </label>
+              </li>
+              <li class="form__itemData">
+                <label class="form__label">
+                  <span class="form__labelName">Возраст (лет):</span>
+                  <input class="form__input" type="text" name="Years" placeholder="7" required>
                 </label>
               </li>
             </ul>
           </section>
-          <section class="form__section form__section--noBorder">
-            <h3 class="form__title">Комментарий</h3>
-            <div class="form__comment">
-              <label class="form__label">
-                <textarea class="form__textarea" name="Comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
-            </div>
-          </section>
-          <section class="form__section">
-            <h3 class="form__title form__title--noMargin">Дополнительно</h3>
-            <ul class="form__list form__list--checkbox">
-              <li class="form__item form__item--checkbox">
-                <label class="form__label form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="sugar" checked>
-                  <span class="form__labelName">Сахарозаменитель</span>
+          <section class="form__target">
+            <h2 class="visuallyHidden">Цель</h2>
+            <ul class="form__listTarget">
+              <li class="form__itemTarget">
+                <label class="form__label form__label--radio">
+                  <input class="form__radio" type="radio" name="Program" value="Похудение" checked>
+                  <span class="form__labelName">Похудение</span>
                 </label>
               </li>
-              <li class="form__item form__item--checkbox">
-                <label class="form__label form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="aqua">
-                  <span class="form__labelName">Питьевая вода</span>
+              <li class="form__itemTarget">
+                <label class="form__label form__label--radio">
+                  <input class="form__radio" type="radio" name="Program" value="Набор массы">
+                  <span class="form__labelName">Набор массы</span>
                 </label>
               </li>
-              <li class="form__item form__item--checkbox">
-                <label class="form__label form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="milk">
-                  <span class="form__labelName">Молоко</span>
-                </label>
-              </li>
-              <li class="form__item form__item--checkbox">
-                <label class="form__label form__label--checkbox">
-                  <input class="form__checkbox" type="checkbox" name="vitamins">
-                  <span class="form__labelName">Витамины</span>
+              <li class="form__itemTarget">
+                <label class="form__label form__label--radio">
+                  <input class="form__radio" type="radio" name="Program" value="Не знаю">
+                  <span class="form__labelName">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </section>
-          <div class="pageMain__buttonWrapper">
-            <button class="pageMain__button" type="button">Отправить заявку</button>
-            <p class="form__text">* — Обязательные поля</p>
-          </div>
-        </form>
+        </div>
       </div>
-    </main>
-    <footer class="pageFooter">
-      <section class="contacts">
-        <div class="container wrapper">
-          <div class="contacts__textBox">
-            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="form__contactData">
+        <div class="form__titleWrapper">
+          <div class="container wrapper">
+            <h3 class="form__title form__title--width">Контактные данные (владельца кота)</h3>
           </div>
         </div>
-        <div class="contacts__map"></div>
-      </section>
-      <section class="pageFooter__social social">
         <div class="container wrapper">
-          <div class="pageFooter__logo">
-            <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
+          <ul class="form__listContactData form__wrapper">
+            <li class="form__itemPlace form__itemPlace--email">
+              <label class="form__label">
+                <span class="form__labelName">E-mail:*</span>
+                <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="form__itemPlace form__itemPlace--tel">
+              <label class="form__label">
+                <span class="form__labelName">Телефон:*</span>
+                <input class="form__input" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="form__section">
+        <div class="form__titleWrapper">
+          <div class="container wrapper">
+            <h3 class="form__title">Комментарий</h3>
           </div>
+        </div>
+        <div class="container wrapper">
+          <div class="form__comment">
+            <label class="form__label">
+              <textarea class="form__textarea" name="Comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="form__extra">
+        <div class="form__titleWrapper">
+          <div class="container wrapper">
+            <h3 class="form__title">Дополнительно</h3>
+          </div>
+        </div>
+        <div class="container wrapper">
+          <ul class="form__listExtra">
+            <li class="form__itemExtra">
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox" type="checkbox" name="sugar" checked>
+                <span class="form__labelName">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="form__itemExtra">
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox" type="checkbox" name="aqua">
+                <span class="form__labelName">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="form__itemExtra">
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox" type="checkbox" name="milk">
+                <span class="form__labelName">Молоко</span>
+              </label>
+            </li>
+            <li class="form__itemExtra">
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox" type="checkbox" name="vitamins">
+                <span class="form__labelName">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container wrapper">
+        <div class="pageMain__buttonWrapper">
+          <button class="pageMain__button" type="button">Отправить заявку</button>
+          <p class="form__text">* — Обязательные поля</p>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="pageFooter">
+    <section class="contacts">
+      <div class="container wrapper">
+        <div class="contacts__textBox">
+          <h2 class="visuallyHidden">Наш адрес</h2>
+          <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
+    <section class="pageFooter__social social">
+      <h2 class="visuallyHidden">Мы в социальных сетях</h2>
+      <div class="container wrapper">
+        <div class="pageFooter__logo">
+          <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
+        </div>
           <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__link">Вконтакте</a>
+            <li class="social__item social__item--vk">
+              <a href="" class="social__link">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/icon-vk.svg">
+                <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
+                <img class="social__vk" src="img/icon-vk-mobile.svg" alt="Вконтакте" width="20" height="20">
+              </picture>
+              <span class="visuallyHidden">Вконтакте</span></a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__link">Instagram</a>
+            <li class="social__item social__item--insta">
+              <a href="" class="social__link">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/icon-insta.svg">
+                <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
+                <img class="social__insta" src="img/icon-insta-mobile.svg" alt="Инстаграм" width="16" height="16">
+              </picture>
+              <span class="visuallyHidden">Instagram</span></a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__link">Facebook</a>
+            <li class="social__item social__item--fb">
+              <a href="" class="social__link">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/icon-fb.svg">
+                <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
+                <img class="social__fb" src="img/icon-fb-mobile.svg" alt="Фэйсбук" width="10" height="10">
+              </picture>
+              <span class="visuallyHidden">Facebook</span></a>
             </li>
           </ul>
           <div class="pageFooter__copyright">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__copyrightLink">HTML Academy</a>
+            <p class="pageFooter__copyrightTitle">HTML Academy</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__copyrightLink">
+            <img class="pageFooter__icon" src="img/htmlacademy.svg" alt="htmlacademy" width="44">
+          </a>
           </div>
         </div>
-      </section>
-    </footer>
+    </section>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 

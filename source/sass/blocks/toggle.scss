@@ -43,14 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .toggle__image {
-    display: none;
-  }
-
   .toggle__change {
     margin: 0;
     padding: 0;
-    margin-top: 337px;
+    margin-top: 295px;
     margin-left: 68px;
   }
 
@@ -93,6 +89,21 @@
     border-radius: 50%;
     border: 1px solid #bebebe;
   }
+
+  .toggle__image {
+    display: block;
+    margin-left: 35px;
+    margin-top: 75px;
+    width: 690px;
+  }
+
+  .toggle__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 33px;
+    margin-left: -20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -101,5 +112,18 @@
     padding: 0;
     margin-top: 253px;
     margin-left: 204px;
+  }
+
+  .toggle {
+    position: relative;
+  }
+
+  .toggle__image {
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 690px;
+    top: -30px;
+    left: 125px;
   }
 }

@@ -82,10 +82,6 @@
     margin-top: 25px;
   }
 
-  .example__wrapperCosts {
-    display: block;
-  }
-
   .example__wrapper {
     display: flex;
   }
@@ -102,22 +98,20 @@
 
   .example__wrapperCosts {
     margin-top: 68px;
+    display: block;
   }
 
   .example__costs {
     width: auto;
-    text-align: center;
+    margin-top: 55px;
+    text-align: left;
+
+    span {
+      margin-left: 60px;
+    }
   }
 
   .example__list {
     width: 300px;
-  }
-
-  .example__costs {
-    margin-top: 55px;
-    text-align: left;
-  }
-  span {
-    margin-left: 60px;
   }
 }

@@ -128,21 +128,13 @@
   }
 
   .programs__item::before {
-    content: "";
-    position: absolute;
     left: 446px;
     top: 92px;
     width: 200px;
     height: 200px;
-    background-color: $olive;
-    border-radius: 50%;
   }
 
   .programs__title--slim::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
     width: 140px;
     height: 198px;
     left: 476px;
@@ -150,10 +142,6 @@
   }
 
   .programs__title--pro::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
     width: 270px;
     height: 120px;
     left: 412px;
@@ -170,18 +158,25 @@
   }
 
   .programs__link::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 10px;
+    width: 23px;
+    height: 11px;
     top: 296px;
     left: 184px;
+  }
+
+  .programs__link--position::before {
+    width: 24px;
+    height: 14px;
+    top: 295px;
+    left: 177px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    margin: 0;
+  }
+
   .programs__list {
     display: flex;
     justify-content: space-between;
@@ -199,30 +194,27 @@
     margin-left: 60px;
   }
 
+  .programs__title--slim {
+    margin-left: 0;
+    width: 592px;
+  }
+
   .programs__text {
     margin: 0;
     padding: 0;
     width: 470px;
-    margin-left: 50px;
+    margin-left: 52px;
     margin-top: 75px;
   }
 
   .programs__item::before {
-    content: "";
-    position: absolute;
     left: 52px;
     top: 47px;
     width: 100px;
     height: 100px;
-    background-color: $olive;
-    border-radius: 50%;
   }
 
   .programs__title--slim::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
     left: 65px;
@@ -230,10 +222,6 @@
   }
 
   .programs__title--pro::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
     width: 132px;
     height: 100px;
     left: 35px;
@@ -246,13 +234,16 @@
   }
 
   .programs__link::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 10px;
-    top: 290px;
-    left: 180px;
+    width: 24px;
+    height: 14px;
+    top: 294px;
+    left: 183px;
+  }
+
+  .programs__link--position::before {
+    width: 24px;
+    height: 14px;
+    top: 294px;
+    left: 178px;
   }
 }

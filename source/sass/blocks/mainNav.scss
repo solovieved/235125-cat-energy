@@ -29,8 +29,8 @@
 .mainNav--opened .mainNav__toggle::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 15px;
+  top: 23px;
+  left: 26px;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   width: 25px;
@@ -105,15 +105,29 @@
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 43px;
   }
 
   .mainNav__item {
+    padding-top: 30px;
     margin-left: 34px;
   }
 
+  .mainNav__item--active {
+    border-bottom: 2px solid $olive;
+  }
+
+  .mainNav__item--index {
+    border-bottom: 2px solid $white;
+  }
+
   .mainNav__link {
+    display: block;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .mainNav__link--index {
+    color: $white;
   }
 }

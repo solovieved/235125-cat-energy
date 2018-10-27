@@ -21,6 +21,10 @@
   padding: 0;
   width: 250px;
   margin-top: -4px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .pageMain__button {
@@ -43,13 +47,6 @@
   }
 }
 
-.pageMain__text {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
 @media (min-width: $tablet-width) {
   .pageMain__title {
     font-size: 60px;
@@ -58,7 +55,6 @@
     margin: 0;
     padding: 0;
     padding-top: 54px;
-    margin-bottom: 27px;
   }
 
   .pageMain__buttonWrapper {
@@ -67,10 +63,12 @@
 
   .pageMain__button {
     width: 248px;
+    margin: 0 38px;
     margin-top: 32px;
+    padding: 11px;
 
     &--grey {
-      margin-top: 80px;
+      margin-top: 85px;
     }
   }
 }
@@ -83,7 +81,8 @@
   .pageMain__button {
     width: 170px;
     margin: 0;
-    margin-top: 29px;
+    margin-left: 38px;
+    margin-top: 33px;
 
     &--grey {
       margin-top: 85px;
