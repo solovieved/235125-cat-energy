@@ -16,11 +16,13 @@ navToggle.addEventListener('click', function() {
 function init_map(){
   var myOptions = {
     zoom:17,
-    center:new google.maps.LatLng(59.938898, 30.323026),
+    center:new google.maps.LatLng(59.938898, 30.319239),
     zoomControlOptions: {position: google.maps.ControlPosition.LEFT_TOP},
     mapTypeId: google.maps.MapTypeId.ROADMAP};
   map = new google.maps.Map(document.getElementById("gmap"), myOptions);
   marker = new google.maps.Marker({
-  map: map,position: new google.maps.LatLng(59.938898, 30.323026)});
+  map: map,position: new google.maps.LatLng(59.938898, 30.323026),
+  icon: {url: "../img/map-pin.png", scaledSize: new google.maps.Size(124, 106)}});
   google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
-  infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+}
+  google.maps.event.addDomListener(window, 'load', init_map);
