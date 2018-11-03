@@ -8,8 +8,8 @@
   padding: 0;
   padding-left: 75px;
   padding-right: 75px;
-  margin-top: 38px;
-  min-height: 56px;
+  padding-top: 38px;
+  min-height: 94px;
 }
 
 .pageFooter__social {
@@ -17,17 +17,9 @@
 }
 
 .pageFooter__copyright {
-  min-height: 85px;
+  min-height: 78px;
   display: flex;
   justify-content: space-between;
-  width: 290px;
-  padding-top: 17px;
-}
-
-.pageFooter__icon {
-  display: block;
-  padding-top: 5px;
-  padding-right: 5px;
 }
 
 .pageFooter__copyrightTitle {
@@ -37,16 +29,16 @@
   font-weight: 400;
   color: $dgrey;
   text-decoration: none;
+  margin: 0;
+  margin-left: -1px;
+  padding-top: 30px;
 }
 
-.pageFooter__copyrightLink {
-  &:hover path {
-    fill: #74bc48;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.pageFooter__icon {
+  width: 41px;
+  height: 41px;
+  margin-top: 18px;
+  margin-right: -7px;
 }
 
 @media (min-width: $tablet-width) {

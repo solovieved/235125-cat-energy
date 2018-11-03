@@ -44,6 +44,18 @@ img {
   padding-left: 20px;
 }
 
+.link {
+  fill: #666666;
+
+  &:hover {
+    fill: #74bc48;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;

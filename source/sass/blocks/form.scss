@@ -168,7 +168,7 @@
 .form__itemPlace--email::before {
   position: absolute;
   content: "";
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
@@ -179,7 +179,7 @@
 .form__itemPlace--tel::before {
   position: absolute;
   content: "";
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -201,6 +201,7 @@
   padding-top: 12px;
   padding-left: 14px;
   margin-top: 18px;
+  border: 1px solid $borderg;
 }
 
 .form__extra {
