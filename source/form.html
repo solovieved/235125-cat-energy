@@ -172,7 +172,7 @@
       </div>
     </form>
   </main>
-  <footer class="pageFooter">
+<footer class="pageFooter">
     <section class="contacts">
       <div class="container wrapper">
         <div class="contacts__textBox">
@@ -181,7 +181,7 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="gmap"></div>
     </section>
     <section class="pageFooter__social social">
       <h2 class="visuallyHidden">Мы в социальных сетях</h2>
@@ -190,43 +190,35 @@
           <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
         </div>
           <ul class="social__list">
-            <li class="social__item social__item--vk">
-              <a href="" class="social__link">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/icon-vk.svg">
-                <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
-                <img class="social__vk" src="img/icon-vk-mobile.svg" alt="Вконтакте" width="20" height="20">
-              </picture>
-              <span class="visuallyHidden">Вконтакте</span></a>
+            <li class="social__item">
+              <a href="" class="social__link social__link--vk link">
+                <svg class="social__icon--vk"><use xlink:href="img/sprite.svg#vk"></svg>
+                <span class="visuallyHidden">Вконтакте</span>
+              </a>
             </li>
-            <li class="social__item social__item--insta">
-              <a href="" class="social__link">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/icon-insta.svg">
-                <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
-                <img class="social__insta" src="img/icon-insta-mobile.svg" alt="Инстаграм" width="16" height="16">
-              </picture>
-              <span class="visuallyHidden">Instagram</span></a>
+            <li class="social__item">
+              <a href="" class="social__link social__link--insta link">
+                <svg class="social__icon--insta"><use xlink:href="img/sprite.svg#insta"></svg>
+                <span class="visuallyHidden">Instagram</span>
+              </a>
             </li>
-            <li class="social__item social__item--fb">
-              <a href="" class="social__link">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/icon-fb.svg">
-                <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
-                <img class="social__fb" src="img/icon-fb-mobile.svg" alt="Фэйсбук" width="10" height="10">
-              </picture>
-              <span class="visuallyHidden">Facebook</span></a>
+            <li class="social__item">
+              <a href="" class="social__link social__link--fb link">
+                <svg class="social__icon--fb"><use xlink:href="img/sprite.svg#fb"></svg>
+                <span class="visuallyHidden">Facebook</span>
+              </a>
             </li>
           </ul>
           <div class="pageFooter__copyright">
             <p class="pageFooter__copyrightTitle">HTML Academy</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__copyrightLink">
-            <img class="pageFooter__icon" src="img/htmlacademy.svg" alt="htmlacademy" width="44">
-          </a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
+              <svg class="pageFooter__icon"><use xlink:href="img/sprite.svg#ha"></svg>
+            </a>
           </div>
         </div>
     </section>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCxSbuQE0im6mRO4t7_K_1zwNXwFSP4Zsg"></script>
   <script src="js/script.js"></script>
 </body>
 
