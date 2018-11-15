@@ -30,9 +30,10 @@
   content: "";
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 52px;
   height: 49px;
-  left: 30px;
+  left: 21px;
   top: 22px;
 }
 
@@ -41,6 +42,7 @@
   content: "";
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 69px;
   height: 29px;
   left: 12px;
@@ -138,14 +140,14 @@
     width: 140px;
     height: 198px;
     left: 476px;
-    top: 80px;
+    top: 78px;
   }
 
   .programs__title--pro::before {
     width: 270px;
     height: 120px;
     left: 412px;
-    top: 135px;
+    top: 130px;
   }
 
   .programs__link {
@@ -216,8 +218,8 @@
 
   .programs__title--slim::before {
     width: 100px;
-    height: 100px;
-    left: 65px;
+    height: 98px;
+    left: 51px;
     top: 40px;
   }
 
@@ -225,7 +227,7 @@
     width: 132px;
     height: 100px;
     left: 35px;
-    top: 69px;
+    top: 46px;
   }
 
   .programs__link {

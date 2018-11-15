@@ -77,7 +77,8 @@
   .contacts__title {
     font-size: 20px;
     line-height: 25px;
-    width: 160px;
+    width: 230px;
+    margin-right: 245px;
     margin: 0;
   }
 
@@ -140,6 +141,10 @@
     height: 106px;
     left: calc(50% + 278px);
     top: 149px;
+  }
+
+  .contacts__title {
+    margin-right: 15px;
   }
 
   .contacts__textBox {
