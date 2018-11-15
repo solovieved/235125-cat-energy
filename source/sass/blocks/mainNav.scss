@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
   top: 23px;
-  left: 26px;
+  left: 6px;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   width: 25px;
@@ -30,7 +30,7 @@
   content: "";
   position: absolute;
   top: 23px;
-  left: 26px;
+  left: 10px;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   width: 25px;
@@ -49,7 +49,7 @@
 
 .mainNav__list {
   padding: 0;
-  margin: 0 -20px;
+  margin: 0;
   list-style: none;
   text-transform: uppercase;
 }
@@ -59,6 +59,24 @@
   border-bottom: 1px solid $borderg;
   text-align: center;
   padding-top: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.mainNav__item--active {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .mainNav__link {
@@ -81,11 +99,17 @@
 
   .mainNav__list {
     display: flex;
+    margin: 0 -20px;
   }
 
   .mainNav__item {
     margin-left: 36px;
+    min-height: 57px;
     border: none;
+  }
+
+  .mainNav__item--active {
+    border-bottom: 2px solid $olive;
   }
 
   .mainNav__link {
@@ -111,10 +135,7 @@
   .mainNav__item {
     padding-top: 30px;
     margin-left: 34px;
-  }
-
-  .mainNav__item--active {
-    border-bottom: 2px solid $olive;
+    padding-bottom: 9px;
   }
 
   .mainNav__item--index {

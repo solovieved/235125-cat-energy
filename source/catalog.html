@@ -14,7 +14,7 @@
   </div>
 
   <header class="pageHeader">
-    <div class="container wrapper">
+    <div class="container">
       <div class="pageHeader__wrapper">
         <a href="#" class="pageHeader__logo">
             <picture>
@@ -41,12 +41,14 @@
     </div>
   </header>
   <main class="pageMain">
-    <div class="container wrapper">
-      <h2 class="pageMain__title">Каталог продукции</h2>
+    <div class="container">
+      <div class="pageMain__titleBox">
+        <h2 class="pageMain__title wrapper">Каталог продукции</h2>
+      </div>
       <section class="products">
         <ul class="products__list">
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/chicken-small-desktop@1x.webp 1x, img/webp/chicken-small-desktop@2x.webp 2x">
@@ -75,10 +77,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/chicken-big-desktop@1x.webp 1x, img/webp/chicken-big-desktop@2x.webp 2x">
@@ -107,10 +109,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/fish-small-desktop@1x.webp 1x, img/webp/fish-small-desktop@2x.webp 2x">
@@ -139,10 +141,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/fish-big-desktop@1x.webp 1x, img/webp/fish-big-desktop@2x.webp 2x">
@@ -171,10 +173,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/buckwheat-small-desktop@1x.webp 1x, img/webp/buckwheat-small-desktop@2x.webp 2x">
@@ -203,10 +205,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/buckwheat-big-desktop@1x.webp 1x, img/webp/buckwheat-big-desktop@2x.webp 2x">
@@ -235,10 +237,10 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item card">
-            <div class="card__wrapper">
+            <div class="card__wrapper wrapper">
               <div class="card__image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/rice-small-desktop@1x.webp 1x, img/webp/rice-small-desktop@2x.webp 2x">
@@ -267,14 +269,14 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="pageMain__button">Заказать</a>
+            <a href="#" class="pageMain__button wrapper">Заказать</a>
           </li>
           <li class="products__item all">
-            <div class="all__content">
+            <div class="all__content wrapper">
               <p class="all__contentTitle">Показать ещё 100500 товаров</p>
               <p class="all__contentText">На самом деле вкусов гораздо больше!</p>
             </div>
-            <a href="#" class="pageMain__button pageMain__button--grey">Показать всё</a>
+            <a href="#" class="pageMain__button pageMain__button--grey wrapper">Показать всё</a>
           </li>
         </ul>
       </section>
@@ -340,47 +342,49 @@
   <footer class="pageFooter">
     <section class="contacts">
       <div class="container wrapper">
-        <div class="contacts__textBox">
+        <div class="contacts__textBox contacts__textBox--bg">
           <h2 class="visuallyHidden">Наш адрес</h2>
           <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map" id="gmap"></div>
+      <div class="contacts__map" id="gmap">
+        <div></div>
+      </div>
     </section>
     <section class="pageFooter__social social">
       <h2 class="visuallyHidden">Мы в социальных сетях</h2>
       <div class="container wrapper">
-        <div class="pageFooter__logo">
+        <a href="#" class="pageFooter__logo">
           <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
-        </div>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__link social__link--vk link">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--vk link">
                 <svg class="social__icon--vk"><use xlink:href="#vk"></svg>
                 <span class="visuallyHidden">Вконтакте</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--insta link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--insta link">
                 <svg class="social__icon--insta"><use xlink:href="#insta"></svg>
                 <span class="visuallyHidden">Instagram</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--fb link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--fb link">
                 <svg class="social__icon--fb"><use xlink:href="#fb"></svg>
                 <span class="visuallyHidden">Facebook</span>
               </a>
-            </li>
-          </ul>
-          <div class="pageFooter__copyright">
+          </li>
+        </ul>
+        <div class="pageFooter__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
             <p class="pageFooter__copyrightTitle">HTML Academy</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
-              <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
-            </a>
-          </div>
+            <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
+          </a>
         </div>
+      </div>
     </section>
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCxSbuQE0im6mRO4t7_K_1zwNXwFSP4Zsg"></script>

@@ -37,11 +37,24 @@ img {
   overflow: hidden;
 }
 
-.container {
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.wrapper {
   width: 320px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 .link {
@@ -62,6 +75,10 @@ img {
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
   }
 }
 

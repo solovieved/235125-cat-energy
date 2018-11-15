@@ -240,10 +240,24 @@
     left: 183px;
   }
 
+  .programs__link:hover::before {
+    width: 27px;
+    height: 12px;
+  }
+
+  .programs__link:active {
+    opacity: 0.3;
+  }
+
   .programs__link--position::before {
     width: 24px;
     height: 14px;
     top: 294px;
     left: 178px;
+  }
+
+  .programs__link--position:hover::before {
+    width: 27px;
+    height: 12px;
   }
 }

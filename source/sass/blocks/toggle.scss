@@ -65,6 +65,14 @@
     padding-bottom: 6px;
   }
 
+  .toggle__button:hover {
+    border-bottom: 1px solid;
+  }
+
+  .toggle__button:active {
+    border: none;
+  }
+
   .toggle__slider {
     background-color: #dcdcdc;
     border: none;
@@ -96,6 +104,14 @@
     background-color: $white;
     border-radius: 50%;
     border: 1px solid #bebebe;
+  }
+
+  .toggle__slider:hover::before {
+    box-shadow: 0 2px 4px #bfbfbf;
+  }
+
+  .toggle__slider:active::before {
+    border: 2px solid $olive;
   }
 
   .toggle__image {

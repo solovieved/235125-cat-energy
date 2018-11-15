@@ -3,9 +3,11 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 289px;
+  padding: 0;
   padding-top: 186px;
   margin-top: 39px;
   margin-bottom: 35px;
+  width: 280px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

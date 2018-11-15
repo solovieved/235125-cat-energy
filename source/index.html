@@ -12,9 +12,8 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-
   <header class="pageHeader pageHeader--index">
-    <div class="container wrapper">
+    <div class="container">
       <div class="pageHeader__wrapper">
         <a href="#" class="pageHeader__logo">
           <picture>
@@ -26,7 +25,7 @@
         <nav class="mainNav mainNav--closed mainNav--nojs">
           <button class="mainNav__toggle" type="button"><span class="visuallyHidden">Открыть меню</span></button>
           <ul class="mainNav__list">
-            <li class="mainNav__item mainNav__item--active mainNav__item--index">
+            <li class="mainNav__item mainNav__item--index mainNav__item--active">
               <a class="mainNav__link mainNav__link--index">Главная</a>
             </li>
             <li class="mainNav__item">
@@ -156,7 +155,7 @@
     </section>
   </main>
   <footer class="pageFooter">
-    <section class="contacts">
+    <section class="contacts contacts--index">
       <div class="container wrapper">
         <div class="contacts__textBox">
           <h2 class="visuallyHidden">Наш адрес</h2>
@@ -164,45 +163,48 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map" id="gmap"></div>
+      <div class="contacts__map" id="gmap">
+        <div></div>
+      </div>
     </section>
     <section class="pageFooter__social social">
       <h2 class="visuallyHidden">Мы в социальных сетях</h2>
       <div class="container wrapper">
-        <div class="pageFooter__logo">
+        <a href="#" class="pageFooter__logo">
           <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
-        </div>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__link social__link--vk link">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--vk link">
                 <svg class="social__icon--vk"><use xlink:href="#vk"></svg>
                 <span class="visuallyHidden">Вконтакте</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--insta link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--insta link">
                 <svg class="social__icon--insta"><use xlink:href="#insta"></svg>
                 <span class="visuallyHidden">Instagram</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--fb link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--fb link">
                 <svg class="social__icon--fb"><use xlink:href="#fb"></svg>
                 <span class="visuallyHidden">Facebook</span>
               </a>
-            </li>
-          </ul>
-          <div class="pageFooter__copyright">
+          </li>
+        </ul>
+        <div class="pageFooter__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
             <p class="pageFooter__copyrightTitle">HTML Academy</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
-              <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
-            </a>
-          </div>
+            <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
+          </a>
         </div>
+      </div>
     </section>
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCxSbuQE0im6mRO4t7_K_1zwNXwFSP4Zsg"></script>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

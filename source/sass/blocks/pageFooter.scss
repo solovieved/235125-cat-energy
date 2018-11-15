@@ -3,6 +3,7 @@
 }
 
 .pageFooter__logo {
+  display: block;
   border-bottom: 1px solid $borderg;
   margin: 0;
   padding: 0;
@@ -12,14 +13,25 @@
   min-height: 94px;
 }
 
+.pageFooter__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .pageFooter__social {
   background-color: $grey;
 }
 
-.pageFooter__copyright {
+.pageFooter__link {
   min-height: 78px;
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .pageFooter__copyrightTitle {

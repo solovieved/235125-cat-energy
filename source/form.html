@@ -14,7 +14,7 @@
   </div>
 
   <header class="pageHeader">
-    <div class="container wrapper">
+    <div class="container">
       <div class="pageHeader__wrapper">
         <a href="#" class="pageHeader__logo">
             <picture>
@@ -46,27 +46,27 @@
       <p class="pageMain__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
     <form action="http://echo.htmlacademy.ru" class="form" method="post">
-      <div class="container wrapper">
+      <div class="container">
         <div class="form__wrapper">
           <section class="form__data">
             <h2 class="visuallyHidden">Данные кота</h2>
             <ul class="form__listData">
-              <li class="form__itemData">
+              <li class="form__itemData wrapper">
                 <label class="form__label">
                   <span class="form__labelName">Имя:*</span>
                   <input class="form__input" type="text" name="Name" placeholder="Барсик" required>
                 </label>
               </li>
-              <li class="form__itemData">
+              <li class="form__itemData wrapper">
                 <label class="form__label">
                   <span class="form__labelName">Вес (кг):*</span>
-                  <input class="form__input" type="text" name="Weight" placeholder="7" required>
+                  <input class="form__input" type="number" name="Weight" min="0" placeholder="7" required>
                 </label>
               </li>
-              <li class="form__itemData">
+              <li class="form__itemData wrapper">
                 <label class="form__label">
                   <span class="form__labelName">Возраст (лет):</span>
-                  <input class="form__input" type="text" name="Years" placeholder="7" required>
+                  <input class="form__input" type="number" name="Years" min="0" placeholder="7">
                 </label>
               </li>
             </ul>
@@ -74,19 +74,19 @@
           <section class="form__target">
             <h2 class="visuallyHidden">Цель</h2>
             <ul class="form__listTarget">
-              <li class="form__itemTarget">
+              <li class="form__itemTarget wrapper">
                 <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="Program" value="Похудение" checked>
                   <span class="form__labelName">Похудение</span>
                 </label>
               </li>
-              <li class="form__itemTarget">
+              <li class="form__itemTarget wrapper">
                 <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="Program" value="Набор массы">
                   <span class="form__labelName">Набор массы</span>
                 </label>
               </li>
-              <li class="form__itemTarget">
+              <li class="form__itemTarget wrapper">
                 <label class="form__label form__label--radio">
                   <input class="form__radio" type="radio" name="Program" value="Не знаю">
                   <span class="form__labelName">Не знаю (Нужен ваш совет)</span>
@@ -108,12 +108,16 @@
               <label class="form__label">
                 <span class="form__labelName">E-mail:*</span>
                 <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="form__icon form__icon--mail"><use xlink:href="#icon-mail" width="17"
+  height="17"></svg></input>
               </label>
             </li>
             <li class="form__itemPlace form__itemPlace--tel">
               <label class="form__label">
                 <span class="form__labelName">Телефон:*</span>
                 <input class="form__input" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
+                <svg class="form__icon form__icon--phone"><use xlink:href="#icon-phone" width="20"
+  height="20"></svg>
               </label>
             </li>
           </ul>
@@ -170,7 +174,7 @@
       </section>
       <div class="container wrapper">
         <div class="pageMain__buttonWrapper">
-          <button class="pageMain__button" type="button">Отправить заявку</button>
+          <button class="pageMain__button" type="submit">Отправить заявку</button>
           <p class="form__text">* — Обязательные поля</p>
         </div>
       </div>
@@ -179,47 +183,49 @@
 <footer class="pageFooter">
     <section class="contacts">
       <div class="container wrapper">
-        <div class="contacts__textBox">
+        <div class="contacts__textBox contacts__textBox--bg">
           <h2 class="visuallyHidden">Наш адрес</h2>
           <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map" id="gmap"></div>
+      <div class="contacts__map" id="gmap">
+        <div></div>
+      </div>
     </section>
     <section class="pageFooter__social social">
       <h2 class="visuallyHidden">Мы в социальных сетях</h2>
       <div class="container wrapper">
-        <div class="pageFooter__logo">
+        <a href="#" class="pageFooter__logo">
           <img src="img/logo-footer.svg" alt="Cat Energy" class="pageFooter__logoImage" width="130" height="24">
-        </div>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__link social__link--vk link">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--vk link">
                 <svg class="social__icon--vk"><use xlink:href="#vk"></svg>
                 <span class="visuallyHidden">Вконтакте</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--insta link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--insta link">
                 <svg class="social__icon--insta"><use xlink:href="#insta"></svg>
                 <span class="visuallyHidden">Instagram</span>
               </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--fb link">
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--fb link">
                 <svg class="social__icon--fb"><use xlink:href="#fb"></svg>
                 <span class="visuallyHidden">Facebook</span>
               </a>
-            </li>
-          </ul>
-          <div class="pageFooter__copyright">
+          </li>
+        </ul>
+        <div class="pageFooter__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
             <p class="pageFooter__copyrightTitle">HTML Academy</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link">
-              <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
-            </a>
-          </div>
+            <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
+          </a>
         </div>
+      </div>
     </section>
   </footer>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCxSbuQE0im6mRO4t7_K_1zwNXwFSP4Zsg"></script>

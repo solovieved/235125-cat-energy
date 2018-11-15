@@ -1,4 +1,8 @@
 .contacts {
+  background-color: $grey;
+}
+
+.contacts--index {
   background-color: $white;
 }
 
@@ -8,6 +12,10 @@
   margin: 0;
   padding: 0;
   padding-top: 12px;
+}
+
+.contacts__textBox--bg {
+  background-color: $grey;
 }
 
 .contacts__title {
@@ -33,9 +41,8 @@
   position: relative;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 -38px;
+  background-position: center -38px;
   margin: 0 auto;
-  width: 320px;
   min-height: 363px;
 }
 
@@ -91,8 +98,7 @@
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 -4px;
-    width: 768px;
+    background-position: center -4px;
     height: 396px;
   }
 
