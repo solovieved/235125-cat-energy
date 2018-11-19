@@ -36,16 +36,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stats {
-    margin-right: 42px;
-  }
-
   .stats__text {
     width: 162px;
     height: 72px;
     font-size: 30px;
     line-height: 37px;
-    padding-top: 13px;
+    padding-top: 14px;
   }
 
   .stats__title {

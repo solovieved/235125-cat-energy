@@ -70,7 +70,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 201px;
-    padding-top: 63px;
+    padding-top: 65px;
     padding-left: 41px;
   }
 
@@ -78,8 +78,8 @@
     font-size: 20px;
     line-height: 25px;
     width: 230px;
-    margin-right: 245px;
     margin: 0;
+    margin-right: 245px;
   }
 
   .contacts__text {
@@ -148,6 +148,7 @@
   }
 
   .contacts__textBox {
+    position: absolute;
     background-color: $white;
     width: 570px;
     min-height: 200px;

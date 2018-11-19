@@ -1,15 +1,15 @@
-var navMain = document.querySelector('.mainNav');
-var navToggle = document.querySelector('.mainNav__toggle');
+var navMain = document.querySelector(".mainNav");
+var navToggle = document.querySelector(".mainNav__toggle");
 
-navMain.classList.remove('mainNav--nojs');
+navMain.classList.remove("mainNav--nojs");
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('mainNav--closed')) {
-    navMain.classList.remove('mainNav--closed');
-    navMain.classList.add('mainNav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("mainNav--closed")) {
+    navMain.classList.remove("mainNav--closed");
+    navMain.classList.add("mainNav--opened");
   } else {
-    navMain.classList.add('mainNav--closed');
-    navMain.classList.remove('mainNav--opened');
+    navMain.classList.add("mainNav--closed");
+    navMain.classList.remove("mainNav--opened");
   }
 });
 
@@ -21,8 +21,6 @@ function init_map(){
     mapTypeId: google.maps.MapTypeId.ROADMAP};
   map = new google.maps.Map(document.getElementById("gmap"), myOptions);
   marker = new google.maps.Marker({
-  map: map,position: new google.maps.LatLng(59.938898, 30.323026),
-  icon: {url: "img/map-pin.png", scaledSize: new google.maps.Size(124, 106)}});
-  google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
-}
-  google.maps.event.addDomListener(window, 'load', init_map);
+  map: map,position: new google.maps.LatLng(59.938898, 30.323026)});
+  google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+  infowindow.open(map,marker);}google.maps.event.addDomListener(window, "load", init_map);

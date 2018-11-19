@@ -35,7 +35,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   color: $black;
   text-align: center;
   margin-top: 35px;
@@ -68,6 +68,10 @@
     margin-top: 27px;
   }
 
+  .example__list {
+    width: 366px;
+  }
+
   .example__costs {
     font-size: 20px;
     line-height: 27px;
@@ -91,14 +95,22 @@
     min-height: 622px;
   }
 
-  .example__text {
+  .example__content {
     width: 445px;
+  }
+
+  .example__text {
     margin-top: 146px;
   }
 
   .example__wrapperCosts {
     margin-top: 68px;
+    padding-right: 40px;
     display: block;
+  }
+
+  .example__list {
+    width: 366px;
   }
 
   .example__costs {
@@ -109,9 +121,5 @@
     span {
       margin-left: 60px;
     }
-  }
-
-  .example__list {
-    width: 300px;
   }
 }

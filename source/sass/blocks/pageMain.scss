@@ -5,7 +5,7 @@
 .pageMain__titleBox {
   border-bottom: 1px solid $borderg;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 15px;
   min-height: 90px;
 }
 
@@ -14,6 +14,11 @@
   line-height: 60px;
   font-weight: 400;
   color: $black;
+}
+
+.pageMain__title--noBord {
+  border: none;
+  margin-top: 15px;
 }
 
 .pageMain__text {
@@ -47,19 +52,32 @@
   &:active {
     color: rgba($white, 0.3);
   }
+}
 
-  &--grey {
-    background-color: $grey;
-    color: $dgrey;
-    margin-top: 21px;
+.pageMain__button--grey {
+  background-color: $grey;
+  color: $dgrey;
+  margin-top: 21px;
 
-    &:hover {
-      background-color: #ebebeb;
+  &:hover {
+    background-color: #ebebeb;
   }
 
-    &:active {
-      color: rgba($dgrey, 0.3);
-    }
+  &:active {
+    color: rgba($dgrey, 0.3);
+  }
+}
+
+.pageMain__titleWrapper {
+  border-top: 3px solid #68b738;
+}
+
+.pageMain__buttonWrapper {
+  min-height: 109px;
+
+  .pageMain__button {
+    border: none;
+    padding-top: 0;
   }
 }
 
@@ -74,12 +92,36 @@
     width: auto;
   }
 
+  .pageMain__title--noBord {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 53px;
+  }
+
+  .pageMain__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 350px;
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+
   .pageMain__titleBox {
     border: none;
   }
 
   .pageMain__buttonWrapper {
     display: flex;
+    min-height: 80px;
+
+    .pageMain__button {
+      width: 283px;
+      min-height: 52px;
+      margin-left: 41px;
+      font-size: 20px;
+      padding: 0;
+    }
   }
 
   .pageMain__button {
@@ -97,6 +139,30 @@
 @media (min-width: $desktop-width) {
   .pageMain__title {
     margin-top: 19px;
+  }
+
+  .pageMain__titleBox {
+    margin-top: 33px;
+  }
+
+  .pageMain__title--noBord {
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+  }
+
+  .pageMain__text {
+    margin-left: 0;
+    margin-bottom: 48px;
+  }
+
+  .pageMain__buttonWrapper {
+    .pageMain__button {
+      margin: 0;
+      margin-top: 29px;
+      margin-left: 1px;
+      width: 568px;
+    }
   }
 
   .pageMain__button {

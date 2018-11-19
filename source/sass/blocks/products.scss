@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 148px;
+    padding-top: 26px;
   }
 
   .products__item {
@@ -28,11 +28,6 @@
     min-height: 447px;
   }
 
-  .products__item:nth-child(1),
-  .products__item:nth-child(2) {
-    margin-top: 0;
-  }
-
   .products__item:nth-child(8) {
     margin-top: 140px;
   }
@@ -41,11 +36,6 @@
 @media (min-width: $desktop-width) {
   .products__item {
     width: 245px;
-    margin-top: 127px;
-  }
-
-  .products__item:nth-child(3),
-  .products__item:nth-child(4) {
-    margin-top: 0;
+    margin-top: 126px;
   }
 }

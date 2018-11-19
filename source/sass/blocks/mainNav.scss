@@ -42,6 +42,10 @@
     display: none;
   }
 
+  .mainNav--nojs .mainNav__item {
+    display: block;
+  }
+
   .mainNav--nojs .mainNav__toggle {
     display: none;
   }
@@ -59,6 +63,14 @@
   border-bottom: 1px solid $borderg;
   text-align: center;
   padding-top: 24px;
+}
+
+.mainNav__link {
+  text-decoration: none;
+  color: $black;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
 
   &:hover {
     opacity: 0.6;
@@ -69,7 +81,7 @@
   }
 }
 
-.mainNav__item--active {
+.mainNav__link--active {
   &:hover {
     opacity: 1;
   }
@@ -77,14 +89,6 @@
   &:active {
     opacity: 1;
   }
-}
-
-.mainNav__link {
-  text-decoration: none;
-  color: $black;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
 }
 
 @media (min-width: $tablet-width) {

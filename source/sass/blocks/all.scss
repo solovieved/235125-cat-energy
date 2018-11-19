@@ -26,11 +26,22 @@
 .all::before {
   position: absolute;
   content: "";
-  background-image: url("../img/icon-plus.svg");
   width: 30px;
-  height: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
   left: calc(50% - 15px);
-  top: 27px;
+  top: 40px;
+}
+
+.all::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  left: calc(50% - 15px);
+  top: 40px;
+  transform: rotate(90deg);
 }
 
 @media (min-width: $tablet-width) {
@@ -41,14 +52,22 @@
 
   .all::before {
     width: 60px;
-    height: 60px;
+    height: 2px;
     left: 132px;
-    top: 55px;
+    top: 83px;
+  }
+
+  .all::after {
+    width: 60px;
+    height: 2px;
+    left: 132px;
+    top: 83px;
   }
 
   .all__content {
     margin: 0 38px;
     padding: 0;
+    width: auto;
   }
 
   .all__contentTitle {
@@ -74,7 +93,12 @@
 
   .all::before {
     left: 92px;
-    top: 55px;
+    top: 83px;
+  }
+
+  .all::after {
+    left: 92px;
+    top: 83px;
   }
 
   .all__content {

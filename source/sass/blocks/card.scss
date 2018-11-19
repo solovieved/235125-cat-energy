@@ -35,6 +35,10 @@
 .card__wrapper {
   display: flex;
   min-height: 144px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +50,8 @@
   .card__wrapper {
     display: block;
     padding: 0;
+    margin: 0;
+    width: auto;
   }
 
   .card__title {
@@ -87,6 +93,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card__wrapper {
+    width: auto;
+  }
+
   .card__title {
     margin: 0;
     padding: 0;
