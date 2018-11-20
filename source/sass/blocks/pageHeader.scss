@@ -2,12 +2,14 @@
   background-color: $white;
 }
 
-.pageHeader__logo {
+.pageHeader__link {
   display: block;
+}
+
+.pageHeader__logo {
   min-height: 65px;
   margin: 0;
   padding-top: 12px;
-  padding-left: 6%;
   padding-right: 20px;
   border-bottom: 1px solid $borderg;
 
@@ -30,11 +32,14 @@
     justify-content: space-between;
   }
 
+  .pageHeader__link {
+    padding: 0;
+  }
+
   .pageHeader__logo {
     border: none;
     padding: 0;
     margin: 0;
-    margin-right: 70px;
     margin-top: 22px;
   }
 
