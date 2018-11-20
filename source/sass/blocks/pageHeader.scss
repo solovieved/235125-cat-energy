@@ -65,7 +65,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .pageHeader--index {
       background-image:
-        linear-gradient(to top, $white 175px, transparent 175px),
+        linear-gradient(to top, $white 82px, transparent 82px),
         url("../img/index-background-desktop@2x.jpg"),
         linear-gradient(to right, $white calc(50% - 359px), #63a73a calc(50% - 359px));
       background-size: auto, 720px auto;

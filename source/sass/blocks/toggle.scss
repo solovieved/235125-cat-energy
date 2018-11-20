@@ -1,8 +1,11 @@
 .toggle {
+  position: relative;
+
   input {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 35px;
+    z-index: -1;
   }
 }
 
@@ -137,10 +140,6 @@
     padding: 0;
     margin-top: 253px;
     margin-left: 204px;
-  }
-
-  .toggle {
-    position: relative;
   }
 
   .toggle__image {
