@@ -365,6 +365,7 @@
     margin-right: 38px;
     margin-left: 41px;
     padding-left: 30px;
+    padding-bottom: 30px;
   }
 
   .form__itemTarget {
@@ -478,15 +479,12 @@
     justify-content: space-between;
     margin-left: 41px;
     margin-top: 19px;
-
-    .form__itemExtra {
-      width: 322px;
-    }
   }
 
   .form__itemExtra {
     margin-top: 11px;
     margin-bottom: 30px;
+    width: 322px;
   }
 
   .form__itemExtra:first-child {
@@ -519,6 +517,7 @@
 
   .form {
     min-height: 1573px;
+    padding-bottom: 72px;
   }
 }
 
@@ -557,6 +556,7 @@
     margin-top: 19px;
     width: 570px;
     margin-left: 20px;
+    padding-bottom: 30px;
   }
 
   .form__itemTarget:first-child {
@@ -625,14 +625,14 @@
   }
 
   .form__listExtra {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0;
     margin-top: 17px;
     margin-left: 3px;
   }
 
   .form__itemExtra {
-    margin-left: 80px;
+    width: 245px;
   }
 
   .form__checkbox + .form__labelName::before {
@@ -656,5 +656,6 @@
 
   .form {
     min-height: 1196px;
+    padding-bottom: 81px;
   }
 }

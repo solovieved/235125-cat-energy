@@ -105,6 +105,7 @@
 
   .mainNav__list {
     display: flex;
+    width: 477px;
     margin: 0 -20px;
   }
 
@@ -137,6 +138,8 @@
     margin: 0;
     padding: 0;
     margin-top: 43px;
+    width: 512px;
+    flex-wrap: wrap;
   }
 
   .mainNav__item {
