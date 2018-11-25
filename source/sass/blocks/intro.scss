@@ -65,8 +65,8 @@
 @media (min-width: $tablet-width) {
   .intro {
     padding: 0;
-    min-height: 810px;
     background: $white;
+    margin-bottom: -54px;
   }
 
   .intro__parent {
@@ -104,15 +104,14 @@
   }
 
   .intro__button {
-    position: absolute;
-    left: 119px;
-    top: 229px;
     font-size: 20px;
     line-height: 20px;
     width: 245px;
     min-height: 52px;
     padding: 0;
     padding-top: 15px;
+    transform: translateY(-581px);
+    margin-left: 90px;
   }
 }
 
@@ -120,10 +119,10 @@
   .intro {
     min-height: 661px;
     background: none;
+    margin-bottom: -55px;
   }
 
   .intro__wrapper {
-    display: flex;
     margin: 0;
     padding: 0;
     margin-left: -8px;
@@ -132,24 +131,26 @@
   .intro__title {
     width: 450px;
     padding-top: 52px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .intro__text {
+    position: relative;
     width: 450px;
-    z-index: 1;
+    z-index: 100;
   }
 
   .intro__image {
     position: absolute;
     width: 552px;
     left: 490px;
-    top: 5px;
+    top: -47px;
     z-index: 0;
   }
 
   .intro__button {
-    left: 120px;
-    top: 339px;
+    margin-top: 52px;
+    position: relative;
+    transform: none;
   }
 }

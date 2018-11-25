@@ -72,6 +72,7 @@
     min-height: 201px;
     padding-top: 65px;
     padding-left: 41px;
+    padding-bottom: 55px;
   }
 
   .contacts__title {
@@ -120,12 +121,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+  }
+
   .contacts__map {
     background-image: url("../img/bg-map-desktop@1x.png");
     background-repeat: no-repeat;
-    height: 400px;
+    height: auto;
     width: auto;
     background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -148,14 +161,15 @@
   }
 
   .contacts__textBox {
-    position: absolute;
     background-color: $white;
     width: 570px;
     min-height: 200px;
     margin-top: 95px;
     padding-right: 45px;
     padding-left: 77px;
-    z-index: 1;
+    padding-bottom: 55px;
+    position: relative;
+    z-index: 2;
   }
 
   .contacts__text {

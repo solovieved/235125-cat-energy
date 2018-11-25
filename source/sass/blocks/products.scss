@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   min-height: 209px;
+  padding-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +27,7 @@
     margin-top: 124px;
     border: none;
     min-height: 447px;
+    padding-bottom: 40px;
   }
 
   .products__item:nth-child(8) {

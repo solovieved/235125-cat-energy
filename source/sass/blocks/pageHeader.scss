@@ -52,7 +52,7 @@
 @media (min-width: $desktop-width) {
   .pageHeader--index {
     background-image:
-      linear-gradient(to top, $white 82px, transparent 82px),
+      linear-gradient(to top, $white 135px, transparent 135px),
       url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, $white calc(50% - 359px), #63a73a calc(50% - 359px));
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .pageHeader--index {
       background-image:
-        linear-gradient(to top, $white 82px, transparent 82px),
+        linear-gradient(to top, $white 135px, transparent 135px),
         url("../img/index-background-desktop@2x.jpg"),
         linear-gradient(to right, $white calc(50% - 359px), #63a73a calc(50% - 359px));
       background-size: auto, 720px auto;

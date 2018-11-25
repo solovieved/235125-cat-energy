@@ -1,5 +1,6 @@
 .toggle {
   position: relative;
+  padding-bottom: 35px;
 
   input {
     position: absolute;
@@ -55,6 +56,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .toggle {
+    margin-top: -13px;
+    padding-bottom: 66px;
+  }
+
   .toggle__change {
     margin: 0;
     padding: 0;
@@ -135,6 +141,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .toggle {
+    margin-top: 0;
+  }
+
   .toggle__change {
     margin: 0;
     padding: 0;

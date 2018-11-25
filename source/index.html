@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -97,7 +97,7 @@
               <p class="work__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="work__item work__item--number work__item--clock">
-              <p class="work__text">Уже через месяц наслаждайтесь изменениями к лучшему <br class="br"> вашего питомца!</p>
+              <p class="work__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -112,12 +112,12 @@
             <div class="example__wrapperCosts">
               <ul class="example__list">
                 <li class="example__item stats">
-                  <div class="stats__title">Снижение веса</div>
                   <div class="stats__text">5 кг</div>
+                  <div class="stats__title">Снижение веса</div>
                 </li>
                 <li class="example__item stats">
-                  <div class="stats__title">Затрачено времени</div>
                   <div class="stats__text">60 дней</div>
+                  <div class="stats__title">Затрачено времени</div>
                 </li>
               </ul>
               <p class="example__costs">Затраты на питание: <span>15 000 руб.</span></p>
@@ -160,14 +160,16 @@
   </main>
   <footer class="pageFooter">
     <section class="contacts contacts--index">
-      <div class="container wrapper">
-        <div class="contacts__textBox">
-          <h2 class="visuallyHidden">Наш адрес</h2>
-          <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+      <div class="contacts__wrapper">
+        <div class="container wrapper">
+          <div class="contacts__textBox">
+            <h2 class="visuallyHidden">Наш адрес</h2>
+            <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          </div>
         </div>
+        <div class="contacts__map" id="gmap"></div>
       </div>
-      <div class="contacts__map" id="gmap"></div>
     </section>
     <section class="pageFooter__social social">
       <h2 class="visuallyHidden">Мы в социальных сетях</h2>
@@ -178,26 +180,26 @@
         <ul class="social__list">
           <li class="social__item social__item--vk">
             <a href="https://vk.com/htmlacademy" class="social__link social__link--vk link">
-              <svg class="social__icon social__icon--vk"><use xlink:href="#vk"></svg>
+              <svg class="social__icon social__icon--vk" width="22" height="21"><use xlink:href="#vk"></svg>
               <span class="visuallyHidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item social__item--insta">
             <a href="https://www.instagram.com/htmlacademy/" class="social__link social__link--insta link">
-              <svg class="social__icon social__icon--insta"><use xlink:href="#insta"></svg>
+              <svg class="social__icon social__icon--insta" width="16" height="21"><use xlink:href="#insta"></svg>
               <span class="visuallyHidden">Instagram</span>
             </a>
           </li>
           <li class="social__item social__item--fb">
             <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb link">
-              <svg class="social__icon social__icon--fb"><use xlink:href="#fb"></svg>
+              <svg class="social__icon social__icon--fb" width="12" height="19"><use xlink:href="#fb"></svg>
               <span class="visuallyHidden">Facebook</span>
             </a>
           </li>
         </ul>
         <div class="pageFooter__copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="pageFooter__link link pageFooter__copyrightTitle">HTML Academy
-            <svg class="pageFooter__icon"><use xlink:href="#ha"></svg>
+            <svg class="pageFooter__icon" width="41" height="41"><use xlink:href="#ha"></svg>
           </a>
         </div>
       </div>
